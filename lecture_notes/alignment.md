@@ -230,6 +230,5 @@ ATCG
 -TCA
 ```
 
-
 {: .important }
 **Take-home message:** The final alignment depends on the costs of gaps and substitutions.
