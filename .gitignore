@@ -144,3 +144,6 @@ Backup[ ]of[ ]*.numbers/
 
 ### Mathematica
 *.nb
+
+### Data
+*data/* 
