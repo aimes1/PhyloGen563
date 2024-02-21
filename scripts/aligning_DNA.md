@@ -16,6 +16,7 @@ Note: the ClustalW and MUSCLE alignment programs do not run to completion on my 
    1. These files are all in .fna format 
    2. Input following commands to generate output file berryiisolates.xmfa, which is aligning the listed .fna input genome files. 
 ```shell
-cd cd data/Vfischeri_genomes/2022_Eberryi_WGSeq_consensusfnas
+cd data/Vfischeri_genomes/2022_Eberryi_WGSeq_consensusfnas
+
 /Applications/Mauve.app/Contents/MacOS/progressiveMauve --output=berryiisolates.xmfa BH1.fna BH2.fna BW1.fna BW2.fna BW3.fna BW4.fna BW5.fna BW6.fna BW7.fna BW8.fna BW9.fna
 ```
