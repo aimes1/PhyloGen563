@@ -1,6 +1,6 @@
 # Data Description
 
-# Vfischeri_genomes
+## Vfischeri_genomes
 * 2024_Vfischeri_genbankref_files: folder contains the genbank (.gb) files for V. fischeri strains ES114, MJ11, and SR5 as downloaded on 2024-02-12. 
 * 2024_Vfischeri_MillerAssemblies: folder contains the flye assemblies in triplicate for 12 *V. fischeri* strains commonly used in the Mandel lab for study in the squid-vibrio system. The DNA extraction and sequencing was performed years prior by lab member Katherine Bultman, and current processing of the raw read fasta files has been performed in 2024 by Delaney Miller as detailed in [bacterialgenome_assemblyworkflow.md](bacterialgenome_assemblyworkflow.md).
 * 2022_Eberryi_WGSeq_consensusfnas: folder contains the consensus FASTA file sequences for 11 bacterial isolates I processed from *Euprymna berryi* squid in 2022. This exact isolation is detailed in my private lab notebook for the Mandel lab. These are whole genome sequences processed by Plasmidsaurus, as detailed below:

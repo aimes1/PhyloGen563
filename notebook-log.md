@@ -1,5 +1,7 @@
 # Notebook Log
 
+2024-02-20
+* Ran progressiveMauve to align 2022_Eberryi_WGSeqPconsensusfnas folder sequences as detailed in [aligning_DNA.md](scripts/aligning_DNA.md) scripts file. Initial alignment is to explore what is present among these bacterial isolates and determine if further analysis is best spent on *Vibrio fischeri* strain-specific differences among the isolates or a broader *Vibrio* multispecies comparison, depending on diversity within the sequences. 
 
 2024-02-12
 * Uploaded datasets to data folder

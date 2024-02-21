@@ -1,4 +1,4 @@
-# In-class exercise (2024-02-13)
+# Aligning Own DNA (2024-02-13)
 
 **Instructions:** Run and compare the results of all three MSA software on the toy dataset of primates (see the class repo [data folder](https://github.com/crsl4/phylogenetics-class/tree/master/data)). You can use my reproducible script as guideline: [notebook-log.md](https://github.com/crsl4/phylogenetics-class/tree/master/exercises/notebook-log.md).
 
