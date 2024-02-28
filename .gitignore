@@ -146,4 +146,4 @@ Backup[ ]of[ ]*.numbers/
 *.nb
 
 ### Data
-*data/Vfischeri_genomes/* 
+*data/files/* 
