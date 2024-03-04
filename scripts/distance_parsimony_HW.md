@@ -5,7 +5,7 @@ nav_exclude: true
 
 # Distance and Parsimony HW
 
-Note: I tried to provide the programs the berryiisolatesall.xmfa from the Mauve alignment, but this generated an error. I'm still troubleshooting the use of MUSCLE and ClustalW to generate an alignment, but the hypothetical entry of my own data is detailed below: 
+Note: I tried to provide the programs the berryiisolatesall.xmfa from the Mauve alignment, but this generated an error. I'm still troubleshooting the use of MUSCLE and ClustalW to generate a fasta alignment, but the hypothetical entry of my own data is detailed below: 
 
 1. Estimate a distance-based tree and a parsimony-based tree for bacterial isolate data using the `ape` and `phangorn` R packages.
   - Don't forget to include in your reproducible script a short description of the chosen algorithm, its assumptions and limitations (see the [software cheatsheet](https://github.com/crsl4/phylogenetics-class/blob/master/exercises/software-cheatsheet.md))
