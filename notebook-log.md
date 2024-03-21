@@ -1,5 +1,16 @@
 # Notebook Log
 
+### Maximum Likelihood Homework (2024-03-21)
+Script information contained in [maximum_likelihood_HW.md](scripts/maximum_likelihood_HW.md). 
+
+Instructions:
+1. Choose a maximum likelihood method that you like the best on your project dataset (it does not have to be RAxML or IQ-Tree, but you should read the paper and tutorial of whichever method you choose)
+   1. Don't forget to include in your reproducible script a short description of the chosen algorithm, its assumptions and limitations (see the software cheatsheet Links to an external site.)
+2. Make sure to keep notes in your reproducible script and keep the most updated version on github (it is important to push your work to github since this allows me to check what you are doing and offer suggestions)
+3. Submit the link to your github commit in canvas
+4. Note: did not generate real output, but instead detailed the commands I would use, as I still need to clean up earlier data to get a good msa file. 
+
+
 ### Distance & Parsimony Homework
 Script information detailed in [distance_parsimony_HW.md](scripts/distance_parsimony_HW.md). 
 
