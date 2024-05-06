@@ -3146,4 +3146,29 @@ e local chains...] (...0 remote chains...) -- 0:00:25
 ```
 
 7. Convert consensus tree files (con.tre) from Nexus to Newick (.tree) files in [FigTree](http://tree.bio.ed.ac.uk/software/figtree/) by exporting.
-   A. Visualize in R Studio using same process as specified in the parsimony and distance-based tree construction, excluding steps for tree construction.   
+
+Visualize in R Studio using same process as specified in the parsimony and distance-based tree construction, excluding steps for tree construction. Install and load _ape_ and _phangorn_ packages. 
+
+Upload the consensus tree files 
+```r
+> mrbayesC <- read.tree(file="/Users/aimes/Temp/PhyloGen563/data/large_files/phylogen_images/Vfisheri_rscS_DNA_clustal_mrbayes_con.tree")
+
+> mrbayesM <- read.tree(file="/Users/aimes/Temp/PhyloGen563/data/large_files/phylogen_images/Vfischeri_rscS_DNA_muscle_mrbayes_con.tree")
+```
+
+Root the tree to the outgroup MJ8.1 
+```r
+> mrbayesC.rooted <- root(mrbayesC, outgroup = "'MJ8.1'", resolve.root = TRUE)
+
+> mrbayesM.rooted <- root(mrbayesM, outgroup = "'MJ8.1'", resolve.root = TRUE)
+```
+
+Plot the tree
+```r
+> plot(mrbayesC.rooted, cex=.7, edge.color = "black", main="Bayesian Inference Tree from CLUSTALW")
+
+> plot(mrbayesM.rooted, cex=.7, edge.color = "black", main="Bayesian Inference Tree from MUSCLE")
+```
+
+
+

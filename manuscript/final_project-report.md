@@ -1,8 +1,6 @@
-# Construction and comparison of phylogenetic trees by diverse software methods for 12 *Vibrio fischeri* strains from the *rscS* locus
+# Construction and comparison of phylogenetic trees by diverse software methods for 12 *Vibrio fischeri* strains from the *rscS* locus consistently identifies Group A as phylogenetically related
 
 Avery Imes
-
-Title requirements: Title is concise, conveys main point of analysis, and includes these key components: study system, variables, result & direction
 
 ## Abstract 
 Requirements: Concisely & clearly covers all key components in 200 words or less: biological rationale, hypothesis, approach, result direction & conclusions
@@ -103,6 +101,13 @@ Requirements: With a few minor exceptions, contains a concise, well-organized na
 <IMG SRC="../figures/Figure03_ParsimonyTrees.png" WIDTH=800>
 
 ##### Figure 3
+
+
+<IMG SRC="../figures/Figure04_MaximumLikelihoodTrees.png" WIDTH=800>
+
+##### Figure 4
+
+
 
 Overall, maximum likelihood, bayesian inference, and neighbor joining are statistically consistent methods. UPGMA and maximum parsimony are not statistically consistent methods. 
 
