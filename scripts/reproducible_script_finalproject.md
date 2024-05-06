@@ -38,12 +38,13 @@ Input: 12 seqs, avg length 2784, max 2802
 aimes@Averys-MacBook-Pro ~ %
 ```
 
-1. The MUSCLE multiple sequence alignment stored in the file [Vfischeri_rscS_DNA_muscle-aligned.fasta](/Users/aimes/Temp/PhyloGen563/data/large_files/rscS_multiple-seq-alignments/Vfischeri_rscS_DNA_muscle-aligned.fasta)
+4. The MUSCLE multiple sequence alignment stored in the file [Vfischeri_rscS_DNA_muscle-aligned.fasta](/Users/aimes/Temp/PhyloGen563/data/large_files/rscS_multiple-seq-alignments/Vfischeri_rscS_DNA_muscle-aligned.fasta)
 
-### Alignment method 2: ClustalW
-1. Download ClustalW file clustalw-2.1-macosx.dmg as modified on 2010-11-17. 
+### Alignment method 2: CLUSTALW
+1. Download CLUSTALW file clustalw-2.1-macosx.dmg as modified on 2010-11-17. 
    A. Link to download file: http://www.clustal.org/download/current/clustalw-2.1-macosx.dmg
-   B. Running commands for Clustal 2.0.12 are found in the [docs](http://www.clustal.org/download/clustalw_help.txt).
+   B. Running commands for CLUSTAL 2.0.12 are found in the [docs](http://www.clustal.org/download/clustalw_help.txt).
+   C. The input file is the 12 nucleotide sequence FASTA file: [Vfischeri_rscS_DNAfasta.fasta](/Users/aimes/Temp/PhyloGen563/data/large_files/Vfischeri_rscS_DNAfasta.fasta)
 
 2. Run the input command to align sequences: 
 ```shell
@@ -162,7 +163,7 @@ Fasta-Alignment file created    [/Users/aimes/Documents/phylo_class/rscS/Vfische
 
 aimes@Averys-MacBook-Pro ~ %
 ```
-4. Output file stored as `Vfischeri_rscS_DNA-clustal-aligned.fasta`. 
+1. Output file stored as [Vfischeri_rscS_DNA-clustal-aligned.fasta](/Users/aimes/Temp/PhyloGen563/data/large_files/rscS_multiple-seq-alignments/Vfischeri_rscS_DNA-clustal-aligned.fasta). 
 
 
 ## Estimating Distance and Parsimony
@@ -246,7 +247,7 @@ The following object is masked from ‘package:adegenet’:
 muscledna <- fasta2DNAbin(file="/Users/aimes/Temp/PhyloGen563/data/large_files/rscS_multiple-seq-alignments/Vfischeri_rscS_DNA_muscle-aligned.fasta")
 ```
 
-   B. Output: 
+Output: 
 ```r
  Converting FASTA alignment into a DNAbin object... 
 
@@ -265,36 +266,36 @@ muscledna <- fasta2DNAbin(file="/Users/aimes/Temp/PhyloGen563/data/large_files/r
 ...done.
 ```
 
-4. Compute the genetic distances from the MUSCLE alignment using the Tamura and Nei 1993 model, which allows for different rates of transitions and transversions, heterogeneous base frequencies, and between-site variation of the substitution rate. 
+1. Compute the genetic distances from the MUSCLE alignment using the Tamura and Nei 1993 model, which allows for different rates of transitions and transversions, heterogeneous base frequencies, and between-site variation of the substitution rate. 
    A. TN93 details: Tamura and Nei (1993) developed a model which assumes distinct rates for both kinds of transition (A <-> G versus C <-> T), and transversions. The base frequencies are not assumed to be equal and are estimated from the data. A gamma correction of the inter-site variation in substitution rates is possible.
    B. Input the following: 
 ```r
 DTN93 <- dist.dna(muscledna, model="TN93")
 ```
-   C. Get the NJ tree with the following input: 
+   A. Get the NJ tree with the following input: 
 ```r
 treTN93 <- nj(DTN93)
 ```
 
-5. Recompute the genetic distances from the MUSCLE alignment using the Gailtier and Gouy 1995 model.
-   A. GG95 details: Galtier and Gouy (1995) introduced a model where the G+C content may change through time. Different rates are assumed for transitons and transversions. 
+1. Recompute the genetic distances from the MUSCLE alignment using the Gailtier and Gouy 1995 model.
+   A. GG95 details: Galtier and Gouy (1995) introduced a model where the G+C content may change through time. Different rates are assumed for transitions and transversions. 
    B. Input the following: 
 ```r
 DGG95 <- dist.dna(muscledna, model="GG95")
 ```
-   C. Get the NJ tree with the following input: 
+   A. Get the NJ tree with the following input: 
 ```r
 treGG95 <- nj(DGG95)
 ```
 
-6. Repeat the above steps using the ClustalW alignment data as detailed below. 
+1. Repeat the above steps using the ClustalW alignment data as detailed below. 
 
-7. Load in ClustalW alignment data: 
+2. Load in ClustalW alignment data: 
 ```r
 clustaldna <- fasta2DNAbin(file="/Users/aimes/Temp/PhyloGen563/data/large_files/rscS_multiple-seq-alignments/Vfischeri_rscS_DNA-clustal-aligned.fasta")
 ```
 
-   A. Output: 
+Output: 
 ```r
  Converting FASTA alignment into a DNAbin object... 
 
@@ -383,7 +384,7 @@ library(adegenet)
 library(phangorn)
 ```
 
-3. Convert uploaded dna from above ape steps to a phangorn object:
+3. Convert uploaded multiple sequence alignment files from above ape steps to a phangorn object:
 ```r
 dnaM <- as.phyDat(muscledna)
 dnaC <- as.phyDat(clustaldna)
@@ -427,14 +428,16 @@ title("Clustal pangorn tree")
 ```
 
 
-## Maximum Likelihood Tree Esimation Using IQ-Tree
+## Maximum Likelihood Tree Esimation Using IQ-TREE
 
-1. Run a trial with 1000 bootstraps on the MUSCLE aligned file. 
-   A. Note: m MF signifies the model finder. The predicted best fit model for this data was HKY+F+G4
-2. Run a trial with 5000 bootstraps on the MUSCLE aligned file. Keep the same model. 
-3. Repeat steps 1 and 2 on the ClustalW aligned data. 
-4. The input and output for each trial are detailed below: 
-   1. Note: this step was ran on Jackie Lemaire's MacBook Air as the machine. Commands and choices were specified and input by me, as I was unable to resolve installation issues with the software on my M2 chip MacbookPro. 
+Summary steps: 
+1. Download IQ-TREE for Mac [here](http://www.iqtree.org/#download). Downloaded the zipped folder `iqtree-2.2.2.6-MacOSX`.
+   A. Use the m MF function to predict the best fit model. The predicted best fit model for this data was HKY+F+G4.  
+2. Run a trial with 1000 bootstraps on the MUSCLE aligned file.  
+3. Run a trial with 5000 bootstraps on the MUSCLE aligned file. Keep the same model. 
+4. Repeat steps 1 and 2 on the CLUSTALW aligned data. 
+5. The input and output for each trial are detailed below: 
+   1. Note: this software was ran on Jackie Lemaire's MacBook Air as the machine. Commands and choices were specified and input by me, as I was unable to resolve installation issues with the software on my M2 chip MacbookPro. 
    2. All output files stored on my machine within the [iq-tree-files](/Users/aimes/Temp/PhyloGen563/data/large_files/iq-tree-files) folder on PhyloGen563 github. 
 
 ### MUSCLE trial with 1000 bootstraps 
@@ -1514,18 +1517,31 @@ iqtree_w1k.rooted <- root(iqtree_w1k, outgroup = "MJ8.1", resolve.root = TRUE)
 iqtree_w5k.rooted <- root(iqtree_w5k, outgroup = "MJ8.1", resolve.root = TRUE)
 ```
 
-5. Plot the tree:
-   A. NOTE: trying to figure out how to add branch lengths by changing node labels. 
+5. Plot the tree with node labels visible. 
 ```r
-plot(iqtree_c1k.rooted)
-plot(iqtree_c5k.rooted)
-plot(iqtree_w1k.rooted)
-plot(iqtree_w5k.rooted)
+plot(iqtree_c1k.rooted, show.node.label=TRUE)
+title("IQ-Tree 1k Bootstrap ClustalW Tree")
+
+plot(iqtree_c5k.rooted, show.node.label=TRUE)
+title("IQ-Tree 5k Bootstrap ClustalW Tree")
+
+plot(iqtree_w1k.rooted, show.node.label=TRUE)
+title("IQ-Tree 1k Bootstrap MUSCLE Tree")
+
+plot(iqtree_w5k.rooted, show.node.label=TRUE)
+title("IQ-Tree 5k Bootstrap MUSCLE Tree")
 ```
 
 ## Bayesian Inference of Phylogeny Using MrBayes
 
-1. Convert multiple sequence alignment files of RscS DNA sequence .fasta to .nxs in R Studio. 
+1. Install MrBayes as shown [here](http://nbisweden.github.io/MrBayes/) through homebrew. Note that command line tools through xcode must be installed first, otherwise MrBayes will fail to install. In Mac, commands are:
+
+```shell
+xcode-select --install
+arch -arm64 brew install mrbayes
+```
+
+2. Convert multiple sequence alignment files of RscS DNA sequence .fasta to .nxs in R Studio using _seqinr_ and _ape_ packages. Note that input for MrBayes must be .nxs files.  
    A. Input file of MUSCLE alignment: Vfischeri_rscS_DNA_muscle-aligned.fasta
 ```shell
 install.packages("seqinr")
@@ -1538,6 +1554,7 @@ write.nexus.data(msaM, file="/Users/aimes/Temp/PhyloGen563/data/large_files/rscS
 
 ```
    B. Input file of ClustalW alignment: Vfischeri_rscS_DNA-clustal-aligned.fasta
+
       a. Only install and load packages if not present from previous step. 
 ```shell
 install.packages("seqinr")
@@ -1549,7 +1566,8 @@ msaC = read.FASTA("/Users/aimes/Temp/PhyloGen563/data/large_files/rscS_multiple-
 write.nexus.data(msaC, file="/Users/aimes/Temp/PhyloGen563/data/large_files/rscS_multiple-seq-alignments/Vfischeri_rscS_DNA-clustal-aligned.nex", format="DNA")
 ```
 
-2. Create a MrBayes block in a text (.txt) file called `mbblock.txt` with the following text. 
+3. Create a MrBayes block in a text (.txt) file called `mbblock.txt` with the following text. 
+   
    A. Note that the commands `mcmc;sumt;` must be present at the end so that the mb block is executed.'mcm' runs MCMC and 'sumt' is the command to obtain a summary tree. 
 ```
 begin mrbayes;
@@ -1565,6 +1583,7 @@ begin mrbayes;
  sumt;
 end;
 ```
+
    B. Notes on the choices specified: 
 * nst=2 to specify HKY, the same model used when running IQ-Tree
 * ngen=1000000 tells MrBayes that its robots should each take 1 million steps.
@@ -1575,10 +1594,10 @@ end;
 * savebrlens=yes tells MrBayes that we would like it to save branch lengths when it saves the sampled tree topologies.
 * outgroup MJ8.1 specifies that as the outgroup to root the tree. 
 
-3. Append the MrBayes block to the end of the nexus files with the data: `Vfischeri_rscS_DNA_muscle-aligned.nex`and `Vfischeri_rscS_DNA-clustal-aligned.nex`
+4. Append the MrBayes block to the end of the nexus files with the data: `Vfischeri_rscS_DNA_muscle-aligned.nex`and `Vfischeri_rscS_DNA-clustal-aligned.nex`
    1. Note: the cat command erased the data portion of the file during testing, so the text of the mbblock.txt was manually copy and pasted in the bottom of the relevant .nex file. 
 
-4. Run muscle-aligned nexus file using command: 
+5. Run muscle-aligned nexus file using command: 
 ```shell
 mb Vfischeri_rscS_DNA_muscle-aligned.nex
 ```
@@ -2353,7 +2372,7 @@ e local chains...] (...0 remote chains...) -- 0:00:25
    or use 'set mode=interactive'
 ```
 
-5. Run ClustalW-aligned nexus file using command: 
+6. Run ClustalW-aligned nexus file using command: 
 ```shell
 mb Vfischeri_rscS_DNA_clustal-aligned.nex
 ```
@@ -3126,4 +3145,5 @@ e local chains...] (...0 remote chains...) -- 0:00:25
    or use 'set mode=interactive'
 ```
 
-6. Convert consensus tree files (con.tre) from Nexus to Newick (.tree) files in [FigTree](http://tree.bio.ed.ac.uk/software/figtree/) by exporting. 
+7. Convert consensus tree files (con.tre) from Nexus to Newick (.tree) files in [FigTree](http://tree.bio.ed.ac.uk/software/figtree/) by exporting.
+   A. Visualize in R Studio using same process as specified in the parsimony and distance-based tree construction, excluding steps for tree construction.   
