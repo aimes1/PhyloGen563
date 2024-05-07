@@ -169,6 +169,8 @@ Fasta-Alignment file created    [/Users/jacquelinelemaire/Documents/phylo_class/
 
 ## Estimating Distance and Parsimony
 
+The following packages were used in [RStudio](https://posit.co/products/open-source/rstudio/), which can be downloaded as a desktop app from the link. 
+
 ### Estimate a distance-based tree using software R package _ape_
 
 * _ape_ is one of the most widely used phylogenetic software. It is an R package and it has a huge variety of functions
