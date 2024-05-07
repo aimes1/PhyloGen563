@@ -6,8 +6,8 @@
 1. Compiled sequence data are from selected *Vibrio fischeri* strains in the [Vfischeri_rscS_DNAfasta.fasta](/Users/aimes/Temp/PhyloGen563/data/large_files/Vfischeri_rscS_DNAfasta.fasta) file. This file contains the DNA sequence of the annotated *rscS* gene region from the listed *V. fischeri* strain. 
    A. Note that the path commands below are shown as local paths on the device, and do not correlate to where the data is stored in the github. File names, however, are consistent and can be used to determine which file is being used. 
 2. Use the above file as the input to align sequences using both the MUSCLE program and the ClustalW program as specified below. 
-   A. Use strain MJ8.1 as the outgroup strain for *rscS* analysis. This is a *V. fischeri* that has a divergent RscS as it is a fish symbiont rather than squid symbiont like the other strains. MJ8.1 is unable to colonize squid. 
-      a. Reference paper: Rotman et al 2019 (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6456852/)
+
+   A. Use strain MJ8.1 as the outgroup strain for *rscS* analysis. This is a *V. fischeri* that has a divergent RscS as it is a fish symbiont rather than squid symbiont like the other strains. MJ8.1 is unable to colonize squid ([Rotman et al. 2019](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6456852/))
 
 ### Alignment method 1: MUSCLE
 1. Download [MUSLCE](https://github.com/rcedgar/muscle/releases/tag/5.1.0) as the file [muscle5.1.macos_intel64](https://github.com/rcedgar/muscle/releases/download/5.1.0/muscle5.1.macos_intel64). 
@@ -3145,7 +3145,7 @@ e local chains...] (...0 remote chains...) -- 0:00:25
    or use 'set mode=interactive'
 ```
 
-7. Convert consensus tree files (con.tre) from Nexus to Newick (.tree) files in [FigTree](http://tree.bio.ed.ac.uk/software/figtree/) by exporting.
+7. Convert consensus tree files (con.tree) from Nexus to Newick (.tree) files in [FigTree](http://tree.bio.ed.ac.uk/software/figtree/) by exporting.
 
 Visualize in R Studio using same process as specified in the parsimony and distance-based tree construction, excluding steps for tree construction. Install and load _ape_ and _phangorn_ packages. 
 
