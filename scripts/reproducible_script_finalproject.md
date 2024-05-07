@@ -3,7 +3,7 @@
 ## Create multiple sequence alignment files 
 
 ### Prepare sequence files for alignment 
-1. Compiled sequence data are from selected *Vibrio fischeri* strains in the [Vfischeri_rscS_DNAfasta.fasta](data/large_files/Vfischeri_rscS_DNAfasta.fasta) file. This file contains the DNA sequence of the annotated *rscS* gene region from the listed *V. fischeri* strain. 
+1. Compiled sequence data are from selected *Vibrio fischeri* strains in the [Vfischeri_rscS_DNAfasta.fasta](../data/large_files/Vfischeri_rscS_DNAfasta.fasta) file. This file is held privately but can be sent on request. This file contains the DNA sequence of the annotated *rscS* gene region from the listed *V. fischeri* strain. 
 
 Note that the path commands below are shown as local paths on the device, and do not correlate to where the data is stored in the github. File names, however, are consistent and can be used to determine which file is being used. 
 
@@ -41,20 +41,21 @@ Input: 12 seqs, avg length 2784, max 2802
 jacquelinelemaire@Jacquelines-Air ~ %
 ```
 
-4. The MUSCLE multiple sequence alignment stored in the file [Vfischeri_rscS_DNA_muscle-aligned.fasta](results/rscS_multiple-seq-alignments/Vfischeri_rscS_DNA_muscle-aligned.fasta)
+4. The MUSCLE multiple sequence alignment stored in the file [Vfischeri_rscS_DNA_muscle-aligned.fasta](../results/rscS_multiple-seq-alignments/Vfischeri_rscS_DNA_muscle-aligned.fasta)
 
 ### Alignment method 2: CLUSTALW
 1. Download CLUSTALW file clustalw-2.1-macosx.dmg as modified on 2010-11-17. 
    A. Link to download file: http://www.clustal.org/download/current/clustalw-2.1-macosx.dmg
    B. Running commands for CLUSTAL 2.0.12 are found in the [docs](http://www.clustal.org/download/clustalw_help.txt).
-   C. The input file is the 12 nucleotide sequence FASTA file: [Vfischeri_rscS_DNAfasta.fasta](PhyloGen563/data/large_files/Vfischeri_rscS_DNAfasta.fasta)
+   C. The input file is the 12 nucleotide sequence FASTA file: [Vfischeri_rscS_DNAfasta.fasta](../data/large_files/Vfischeri_rscS_DNAfasta.fasta)
 
 2. Run the input command to align sequences: 
 ```shell
 jacquelinelemaire@Jacquelines-Air ~ % clustalw2 -ALIGN -INFILE=/Users/jacquelinelemaire/Documents/phylo_class/rscS/Vfischeri_rscS_DNAfasta.fasta -OUTFILE=/Users/jacquelinelemaire/Documents/phylo_class/rscS/Vfischeri_rscS_DNA-clustal-aligned.fasta -OUTPUT=FASTA
 ```
 
-1. The output reads as follows: 
+The output reads as follows: 
+
 ```shell
 CLUSTAL 2.1 Multiple Sequence Alignments
 
@@ -164,7 +165,8 @@ FASTA file created!
 
 Fasta-Alignment file created    [/Users/jacquelinelemaire/Documents/phylo_class/rscS/Vfischeri_rscS_DNA-clustal-aligned.fasta]
 ```
-1. Output file stored as [Vfischeri_rscS_DNA-clustal-aligned.fasta](results/rscS_multiple-seq-alignments/Vfischeri_rscS_DNA-clustal-aligned.fasta). 
+
+Output file stored as [Vfischeri_rscS_DNA-clustal-aligned.fasta](../results/rscS_multiple-seq-alignments/Vfischeri_rscS_DNA-clustal-aligned.fasta). 
 
 
 ## Estimating Distance and Parsimony
@@ -269,7 +271,7 @@ Output:
 ...done.
 ```
 
-1. Compute the genetic distances from the MUSCLE alignment using the Tamura and Nei 1993 model, which allows for different rates of transitions and transversions, heterogeneous base frequencies, and between-site variation of the substitution rate. 
+4. Compute the genetic distances from the MUSCLE alignment using the Tamura and Nei 1993 model, which allows for different rates of transitions and transversions, heterogeneous base frequencies, and between-site variation of the substitution rate. 
    A. TN93 details: Tamura and Nei (1993) developed a model which assumes distinct rates for both kinds of transition (A <-> G versus C <-> T), and transversions. The base frequencies are not assumed to be equal and are estimated from the data. A gamma correction of the inter-site variation in substitution rates is possible.
    B. Input the following: 
 ```r
@@ -280,7 +282,7 @@ DTN93 <- dist.dna(muscledna, model="TN93")
 treTN93 <- nj(DTN93)
 ```
 
-1. Recompute the genetic distances from the MUSCLE alignment using the Gailtier and Gouy 1995 model.
+5. Recompute the genetic distances from the MUSCLE alignment using the Gailtier and Gouy 1995 model.
    A. GG95 details: Galtier and Gouy (1995) introduced a model where the G+C content may change through time. Different rates are assumed for transitions and transversions. 
    B. Input the following: 
 ```r
@@ -291,9 +293,9 @@ DGG95 <- dist.dna(muscledna, model="GG95")
 treGG95 <- nj(DGG95)
 ```
 
-1. Repeat the above steps using the ClustalW alignment data as detailed below. 
+6. Repeat the above steps using the ClustalW alignment data as detailed below. 
 
-2. Load in ClustalW alignment data: 
+7. Load in ClustalW alignment data: 
 ```r
 clustaldna <- fasta2DNAbin(file="/Users/aimes/Temp/PhyloGen563/data/large_files/rscS_multiple-seq-alignments/Vfischeri_rscS_DNA-clustal-aligned.fasta")
 ```
@@ -443,7 +445,7 @@ Note: Use the m MF function to predict the best fit model. The predicted best fi
 4. Repeat steps 1 and 2 on the CLUSTALW aligned data. 
 5. The input and output for each trial are detailed below: 
 
-All output files stored within the [iq-tree-files](results/iq-tree-files) folder in the results directory. 
+All output files stored within the [iq-tree-files](../results/iq-tree-files) folder in the results directory. 
 
 ### MUSCLE trial with 1000 bootstraps 
 ```shell
@@ -1549,7 +1551,7 @@ arch -arm64 brew install mrbayes
 ```
 
 2. Convert multiple sequence alignment files of RscS DNA sequence .fasta to .nxs in R Studio using _seqinr_ and _ape_ packages. Note that input for MrBayes must be .nxs files.  
-   A. Input file of MUSCLE alignment: [Vfischeri_rscS_DNA_muscle-aligned.fasta](results/rscS_multiple-seq-alignments/Vfischeri_rscS_DNA_muscle-aligned.fasta)
+   A. Input file of MUSCLE alignment: [Vfischeri_rscS_DNA_muscle-aligned.fasta](../results/rscS_multiple-seq-alignments/Vfischeri_rscS_DNA_muscle-aligned.fasta)
 ```shell
 install.packages("seqinr")
 install.packages("ape")
@@ -1560,9 +1562,9 @@ msaM = read.FASTA("/Users/aimes/Temp/PhyloGen563/data/large_files/rscS_multiple-
 write.nexus.data(msaM, file="/Users/aimes/Temp/PhyloGen563/data/large_files/rscS_multiple-seq-alignments/Vfischeri_rscS_DNA_muscle-aligned.nex", format="DNA")
 
 ```
-   B. Input file of ClustalW alignment: [Vfischeri_rscS_DNA-clustal-aligned.fasta](results/rscS_multiple-seq-alignments/Vfischeri_rscS_DNA-clustal-aligned.fasta)
+   B. Input file of ClustalW alignment: [Vfischeri_rscS_DNA-clustal-aligned.fasta](../results/rscS_multiple-seq-alignments/Vfischeri_rscS_DNA-clustal-aligned.fasta)
 
-      a. Only install and load packages if not present from previous step.
+Note: Only install and load packages if not present from previous step.
 
 ```shell
 install.packages("seqinr")
@@ -1574,7 +1576,7 @@ msaC = read.FASTA("/Users/aimes/Temp/PhyloGen563/data/large_files/rscS_multiple-
 write.nexus.data(msaC, file="/Users/aimes/Temp/PhyloGen563/data/large_files/rscS_multiple-seq-alignments/Vfischeri_rscS_DNA-clustal-aligned.nex", format="DNA")
 ```
 
-3. Create a MrBayes block in a text (.txt) file called `mbblock.txt` with the following text. The file I created can be found [here](scripts/mbblock.txt). 
+3. Create a MrBayes block in a text (.txt) file called `mbblock.txt` with the following text. The file I created can be found [here](../scripts/mbblock.txt). 
    
    A. Note that the commands `mcmc;sumt;` must be present at the end so that the mb block is executed.'mcm' runs MCMC and 'sumt' is the command to obtain a summary tree. 
 ```
@@ -1602,7 +1604,7 @@ end;
 * savebrlens=yes tells MrBayes that we would like it to save branch lengths when it saves the sampled tree topologies.
 * outgroup MJ8.1 specifies that as the outgroup to root the tree. 
 
-4. Append the MrBayes block to the end of the nexus files with the data: [`Vfischeri_rscS_DNA_muscle-aligned.nex`](results/rscS_multiple-seq-alignments/Vfischeri_rscS_DNA_muscle-aligned.nex) and [`Vfischeri_rscS_DNA-clustal-aligned.nex`](results/rscS_multiple-seq-alignments/Vfischeri_rscS_DNA-clustal-aligned.nex). My examples are linked. 
+4. Append the MrBayes block to the end of the nexus files with the data: [`Vfischeri_rscS_DNA_muscle-aligned.nex`](../results/rscS_multiple-seq-alignments/Vfischeri_rscS_DNA_muscle-aligned.nex) and [`Vfischeri_rscS_DNA-clustal-aligned.nex`](../results/rscS_multiple-seq-alignments/Vfischeri_rscS_DNA-clustal-aligned.nex). My examples are linked. 
 
 Note: the cat command erased the data portion of the file during testing, so the text of the mbblock.txt was manually copy and pasted in the bottom of the relevant .nex file. 
 
@@ -3159,7 +3161,7 @@ e local chains...] (...0 remote chains...) -- 0:00:25
    or use 'set mode=interactive'
 ```
 ### Visualize MrBayes Consensus Trees
-1. Open the consensus tree files (nex.con.tree) in [FigTree](http://tree.bio.ed.ac.uk/software/figtree/). Note that FigTree requires Java to operate. 
+1. Open the consensus tree files (nex.con.tree) in [FigTree](http://tree.bio.ed.ac.uk/software/figtree/). Note that FigTree requires Java to operate.
 2. Within FigTree, reroot the trees to the outgroup MJ8.1. Turn on the node label function to display posterior probabilities (display node label as post) on the tree. 
 
 
