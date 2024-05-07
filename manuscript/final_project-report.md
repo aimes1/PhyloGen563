@@ -84,7 +84,7 @@ I first converted both the MUSCLE and CLUSTALW alignment files to nexus (.nxs) f
 * savebrlens=yes tells MrBayes to save branch lengths when it saves the sampled tree topologies.
 * outgroup MJ8.1 specifies that strain as the outgroup to root the tree. 
 
-The resulting consensus tree files (con.tre) can then be converted from Nexus to Newick format in FigTree by exporting the files. Exported Newick format files were then visualized in RStudio. 
+The resulting consensus tree files (con.tree) can then be converted from Nexus to Newick format in FigTree by exporting the files (Rambaut 2018). Exported Newick format files were then visualized in RStudio. 
 
 ## Results 
 Requirements: With a few minor exceptions, contains a concise, well-organized narrative text & tables/figures that highlight key trends/patterns/output. Tables & figures have appropriate legends/ labels & can stand on their own
@@ -141,6 +141,7 @@ Nguyen, L.-T. et al. (2014) ‘IQ-tree: A fast and effective stochastic algorith
 Paradis, E. and Schliep, K. (2019) ‘ape 5.0: An environment for modern phylogenetics and evolutionary analyses in R’, Bioinformatics, 35(3), pp. 526–528. doi:10.1093/bioinformatics/bty633. 
 
 Rambaut, A. (2018) FigTreev1.4.4, Figtree. Available at: http://tree.bio.ed.ac.uk/software/figtree/ (Accessed: 06 May 2024). 
+
 Ronquist, F. and Huelsenbeck, J.P. (2003) ‘MrBayes 3: Bayesian phylogenetic inference under Mixed Models’, Bioinformatics, 19(12), pp. 1572–1574. doi:10.1093/bioinformatics/btg180. 
 
 Rotman, E.R. et al. (2019) ‘Natural strain variation reveals diverse biofilm regulation in squid-colonizing *Vibrio fischeri*’, Journal of Bacteriology, 201(9). doi:10.1128/jb.00033-19. 

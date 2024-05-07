@@ -1,0 +1,488 @@
+#NEXUS
+[Data written by write.nexus.data.R, Sun Apr 28 17:40:43 2024]
+BEGIN DATA;
+  DIMENSIONS NTAX=12 NCHAR=2808;
+  FORMAT DATATYPE=DNA MISSING=? GAP=- INTERLEAVE=YES;
+  MATRIX
+    KB2B1       atgaaaaatcaattattacgttatagccttatcgcaatcattacttgcacattaattatcatttatctcatgctcacgag
+    ES114       atgaaaaatcaattattacgttatagccttatcacaatcattacttgcacattaattatcatttatctcatgctcacgag
+    EM30        atgaaaaatcaattattacgttatagccttatcgcaatcattacttgcacattaattatcatttatctcatgctcacgag
+    EM24        atgaaaaatcaattattacgttatagccttatcgcaatcattacttgcacattaattatcatttatctcatgctcacgag
+    MB14A1      atgaaaaatcaattattacgttatagccttatcgcaatcattacttgcacattaattatcatttatctcatgctcacgag
+    MB13B1      atgaaaaatcaattattacgttatagccttatcgcaatcattacttgcacattaattatcatttatctcatgctcacgag
+    MJ8.1       atgaaaaatcaattattacgctatagccttatcactataattacatgtacattagttatcatttctctcattatcacaag
+    EM18        atgaaaaatcaattattacgttatagccttatcgcaatcattacttgcacattaattatcatttatctcatgctcacgag
+    ES213       atgaaaaatcaattattacgttatagccttatcgcaatcattacttgcacattaattatcatttatctcatgctcacgag
+    MJ102       atgaaaaatcaattattacgttatagccttatcgcaatcattacttgcacattaattatcatttatctcatgctcacgag
+    EM17        atgaaaaatcaattattacgttatagccttatcgcaatcattacttgcacattaattatcatttatctcatgcccacgag
+    MB11B1      atgaaaaatcaattattacgttatagccttatcgcaatcattacttgcacattaattatcatttatctcatgctcacgag
+
+    KB2B1       gaaccatcctgtaaaacaatatcagcgggcctatttaacaccatcacataatataattcaatcacgtgaaaatatttatc
+    ES114       gaaccatcctgtaaaacaatatcagcgggcctatttaacaccatcacataatataattcaatcacgtgaaaatatttatc
+    EM30        gaaccatcctgtaaaacaatatcagcgagcctatttaacaccatcacataatataattcaatcacgtgaaaatatttatc
+    EM24        gaaccatcctgtaaaacaatatcagcgagcctatttaacaccatcacataatataattcaatcacgtgaaaatatttatc
+    MB14A1      gaaccatcctgtaaaacaatatcagcgggcctatttaacaccatcacataatataattcaatcacgtgaaaatatttatc
+    MB13B1      gaaccatcctgtaaaacaatatcagcgggcctatttaacaccatcacataatataattcaatcacgtgaaaatatttatc
+    MJ8.1       aaaccatcttgtagagcaatatcagcgagcctatctaacgctatcgcataatataattcaatcacgtgaaaatatttatc
+    EM18        gaaccatcctgtaaaacaatatcagcgggcatatttaacaccatcacataatataattcaatcacgtgaaaatatttatc
+    ES213       gaaccatcctgtaaaacaatatcagcgggcctatttaacaccatcacataatataattcaatcacgtgaaaatatttatc
+    MJ102       gaaccatcctgtaaaacaatatcagcgggcctatttaacaccatcacataatataattcaatcacgtgaaaatatttatc
+    EM17        gaaccatcctgtaaaacaatatcagcgggcctatttaacaccatcacataatataattcaatcacgtgaaaatatttatc
+    MB11B1      gaaccatcctgtaaaacaatatcagcgggcctatttaacaccatcacataatataattcaatcacgtgaaaatatttatc
+
+    KB2B1       actttaatcatcaagacagtaaaacgtacgatgagtatgcttcgctactcgttgatagtgagctgcaagcttcatttttg
+    ES114       actttaatcatcaagacagtaaaacgtacgatgagtatgcttcgctactcgttgatagtgagctgcaagcttcatttttg
+    EM30        actttaatcatcaagacaataaaacgtacgatgagtatgcttcgctactcgttgatagtgagctgcaagcttcatttttg
+    EM24        actttaatcatcaagacaataaaacgtacgatgagtatgcttcgctactcgttgatagtgagctgcaagcttcatttttg
+    MB14A1      actttaatcatcaagacagtaaaacgtacgatgagtatgcttcgctactcgttgatagtgagctgcaagcttcatttttg
+    MB13B1      actttaatcatcaagacagtaaaacgtacgatgagtatgcttcgctactcgttgatagtgagctgcaagcttcatttttg
+    MJ8.1       attttaatcatcaagataataaaacatacgatgagtacgcttcactattggttgatagtgagctacaagcttcatttttg
+    EM18        actttaatcatcaagacagtaaaacgtacgatgagtatgcttcgctactcgttgatagtgatctgcaagcttcatttttg
+    ES213       actttaatcatcaagacagtaaaacgtacgatgagtatgcttcgctactcgttgatagtgagctgcaagcttcatttttg
+    MJ102       actttaatcatcaagacagtaaaacgtacgatgagtatgcttcgctactcgttgatagtgagctgcaagcttcatttttg
+    EM17        actttaatcatcaagacagtaaaacgtacgatgagtatgcttcgctactcgttgatagtgagctgcaagcttcatttttg
+    MB11B1      actttaatcatcaagacagtaaaacgtacgatgagtatgcttcgctactcgttgatagtgagctgcaagcttcatttttg
+
+    KB2B1       tataatcg------------tcgtactgcttcttggttagagttttttctaattagtgatagccaag---tatttgcttc
+    ES114       tataatcg------------tcgtactgcttcttggttagagttttttctaattagtgatagccaag---tatttgtttc
+    EM30        tatcatcg------------tcgtactgcttcttggttagagttttttctaattagtgataaccagg---tatttgtttc
+    EM24        tatcatcg------------tcgtactgcttcttggttagagttttttctaattagtgataaccagg---tatttgtttc
+    MB14A1      tataatcg------------tcgtattgcttcttggttagagttttttctaattagtgatagccaag---tatttgtttc
+    MB13B1      tataatcg------------tcgtattgcttcttggttagagttttttctaattagtgatagccaag---tatttgtttc
+    MJ8.1       tataaccgtttaaaagacagtcgtacttcttcttggttagagttttttctaattagtgataaccaagctatacttgtttc
+    EM18        tataatcg------------tcgtactgcttcttggttagatttttttctaattagtgatagccaag---tatttgtttc
+    ES213       tataatcg------------tcgtactgcttcttggttagagttttttctaattagtgatagccaag---tatttgcttc
+    MJ102       tataatcg------------tcgtactgcttcttggttagagttttttctaattagtgatagccaag---tatttgtttc
+    EM17        tataatcg------------tcgtactgcttcttggttagagttttttctaattagtgatagccaag---tatttgtttc
+    MB11B1      tataatcg------------tcgtactgcttcttggttagagttttttctaattagtgatagccaag---tatttgcttc
+
+    KB2B1       tcaaaatacttattccaatatcgttctgattgtcaccgatcttgaatctttacttaaactaaaagtattcaaagaataca
+    ES114       tcaaaatacttattccaatatcgttgtgattgtcaccgatcttgaatctttacttaaactaaaagtattcaaagaataca
+    EM30        tcaaaatacttattccaatatcgttgtgattgtcaccgatcttgaatctttacttaaactaaaagtattcaaagaataca
+    EM24        tcaaaatacttattccaatatcgttgtgattgtcaccgatcttgaatctttacttaaactaaaagtattcaaagaataca
+    MB14A1      tcaaaatacttattccaatatcgttgtgattgtcaccgatcttgaatctttacttaaactaaaagtattcaaagaataca
+    MB13B1      tcaaaatacttattccaatatcgttgtgattgtcaccgatcttgaatctttacttaaactaaaagtattcaaagaataca
+    MJ8.1       tcaaaatacttattccaatatcgttgcgattgtcaccgatcttgaatctttacttaggctaaaagtatccaaagaataca
+    EM18        tcaaaatacttattccaatatcgttgtgattgtcaccgatcttgaatctttacttaaactaaaagtattcaaagaataca
+    ES213       tcaaaatacttattccaatatcgttctgattgtcaccgatcttgaatctttacttaaactaaaagtattcaaagaataca
+    MJ102       tcaaaatacttattccaatatcgttgtgattgtcaccgatcttgaatctttacttaaactaaaagtattcaaagaataca
+    EM17        tcaaaatacttattccaatatcgttgtgattgtcaccgatcttgaatctttacttaaactaaaagtattcaaagaataca
+    MB11B1      tcaaaatacttattccaatatcgttctgattgtcaccgatcttgaatctttacttaaactaaaagtattcaaagaataca
+
+    KB2B1       caatccacactatttttttattagaaaaacaattaacaaataacgtacaaaatgttgaggataaatatctaacttctcaa
+    ES114       caatccacactatttttttattagaaaaacaattaacaaataacgtacaaaatgttgaggataaatatctaacttctcaa
+    EM30        caatccacactatttttttattagaaaaacaattaacaaataacgtacaaaatgttgaggataaatatctaacatctcaa
+    EM24        caatccacactatttttttattagaaaaacaattaacaaataacgtacaaaatgttgaggataaatatctaacatctcaa
+    MB14A1      caatccacactatttttttattagaaaaacaattaacaaataacgtacaaaatgttgaggataaatatctaacttctcaa
+    MB13B1      caatccacactatttttttattagaaaaacaattaacaaataacgtacaaaatgttgaggataaatatctaacttctcaa
+    MJ8.1       caacccacactatttttttattagaaaaacaattaattaataacgtacaaaatgttgaggataaatacttaatatctcaa
+    EM18        caatccacactatttttttattagaaaaacaattaacaaataacatacaaaatgttgaggataaatatctaacatctcaa
+    ES213       caatccacactatttttttattagaaaaacaattaacaaataacgtacaaaatgttgaggataaatatctaacttctcaa
+    MJ102       caatccacactatttttttattagaaaaacaattaacaaataacgtacaaaatgttgaggataaatatctaacttctcaa
+    EM17        caatccacactatttttttattagaaaaacaattaacaaataacgtacaaaatgttgaggataaatatctaacatctcaa
+    MB11B1      caatccacactatttttttattagaaaaacaattaacaaataacgtacaaaatgttgaggataaatatctaacttctcaa
+
+    KB2B1       ttaaccttacatagaactttacctaaagaaattgctttatcagacactacaatcaatgattctgatttcactagcttacc
+    ES114       ttaaccttacatagaactttacctaaagaaattgctttatcagacactgcaatcaatgattctgatttcactagcttacc
+    EM30        ttaaccttacatagaactttacctaaagaaatagctttatcagacactgcaatcaatgattctgatttcactagcttacc
+    EM24        ttaaccttacatagaactttacctaaagaaatagctttatcagacactgcaatcaatgattctgatttcactagcttacc
+    MB14A1      ttaaccttacatagaactttacctaaagaaattgctttatcagacactgcaatcaatgattctgatttcactagcttacc
+    MB13B1      ttaaccttacatagaactttacctaaagaaattgctttatcagacactgcaatcaatgattctgatttcactagcttacc
+    MJ8.1       ttaaccttacatggcactttacctaaagaaaaaacgttatcagacactacgctcaatgattctgatttcactagcttatc
+    EM18        ttaaccttacatagaactttagctaaagaaattgctttatcaaacactgcaatcaatgattctgatttcactagcttacc
+    ES213       ttaaccttacatagaactttacctaaagaaattgctttatcagacactacaatcaatgattctgatttcactagcttacc
+    MJ102       ttaaccttacatagaactttacctaaagaaattgctttatcagacactgcaatcaatgattctgatttcactagcttacc
+    EM17        ttaaccttacatagaactttagctaaagaaattgctttatcaaacactgcaatcaatgattctgatttcactagcttacc
+    MB11B1      ttaaccttacatagaactttacctaaagaaattgctttatcagacactacaatcaatgattctgatttcactagcttacc
+
+    KB2B1       caactacataaaactgcgtaaacgtattgagtcaaaaccaaa------agaacaaagtatc---gacagtacagtaaagc
+    ES114       caactacataaaactgcgtaaacgtattgagtcaaaaccaaa------agaacaaagtatc---gacagtacagtaaagc
+    EM30        caactacataaaactgcgtaaacgtattgagtcaaaaccaaa------agaacaaagtatc---gacagtacagtaaagc
+    EM24        caactacataaaactgcgtaaacgtattgagtcaaaaccaaa------agaacaaagtatc---gacagtacagtaaagc
+    MB14A1      caactacataaaactgcgtaaacgtattgagtcaaaaccaaa------agaacaaagtatc---gacagtacagtaaagc
+    MB13B1      caactacataaaactgcgtaaacgtattgagtcaaaaccaaa------agaacaaagtatc---gacagtacagtaaagc
+    MJ8.1       caactacataaaactgcgtgaacgtattgactcagaacaaaaagaaaaagaacaaagtatctttaacaatacagttaagc
+    EM18        caactacataaaactgcgtaaacgtattgagtcaaaaccaaa------agaacaaagtatc---gacagtacagtaaagc
+    ES213       caactacataaaactgcgtaaacgtattgagtcaaaaccaaa------agaacaaagtatc---gacagtacagtaaagc
+    MJ102       caactacataaaactgcgtaaacgtattgagtcaaaaccaaa------agaacaaagtatc---gacagtacagtaaagc
+    EM17        caactacataaaactgcgtaaacgtattgagtcaaaaccaaa------agaacaaagtatc---gacagtacagtaaagc
+    MB11B1      caactacataaaactgcgtaaacgtattgagtcaaaaccaaa------agaacaaagtatc---gacagtacagtaaagc
+
+    KB2B1       aaacacttacaaagcaaaatgcttattggataacccaatctgaaacgataaaaactcaattatttataacaaccttattt
+    ES114       aaacacttacaaagcaaaatgcttattggataacccaatctgaaacgataaaaactcaattatttataacaaccttattt
+    EM30        aaacacttacaaagcaaaatgcttattggataacccaatctgaagcgataaaaactcaattatttataacaaccttattt
+    EM24        aaacacttacaaagcaaaatgcttattggataacccaatctgaagcgataaaaactcaattatttataacaaccttattt
+    MB14A1      aaacacttacaaagcaaaatgcttattggataacccaatctgaagcgataaaaactcaattatttataacaaccttattt
+    MB13B1      aaacacttacaaagcaaaatgcttattggataacccaatctgaagcgataaaaactcaattatttataacaaccttattt
+    MJ8.1       aaacacttacaaagcaaaatgcttattggataactcaatctgaagcgataaaaactcaattatttataacaaccttattt
+    EM18        aaacacttacaaagcaaaatgcttattggataacccaatctgaagcgataaaaactcaattatttataacaaccttattt
+    ES213       aaacacttacaaagcaaaatgcttattggataacccaatctgaaacgataaaaactcaattatttataacaaccttattt
+    MJ102       aaacacttacaaagcaaaatgcttattggataacccaatctgaaacgataaaaactcaattatttataacaaccttattt
+    EM17        aaacacttacaaagcaaaatgcttattggataacccaatctgaagcgataaaaactcaattatttataacaaccttattt
+    MB11B1      aaacacttacaaagcaaaatgcttattggataacccaatctgaaacgataaaaactcaattatttataacaaccttattt
+
+    KB2B1       ttactttgttgcatagcactttatttttatattcgtcttaatgataaacttataaaaacattaactataaaaagggaatt
+    ES114       ttactttgttgtatagcactttatttttatattcgtcttaatgataaacttataaaaacattaactataaaaagggaatt
+    EM30        ttactttgttgtatagcactttatttttatattcgtcttagtgataaacttataaaaacattaactataaaaagggaatt
+    EM24        ttactttgttgtatagcactttatttttatattcgtcttagtgataaacttataaaaacattaactataaaaagggaatt
+    MB14A1      ttactttgttgtatagctctttatttttatattcgtcttagtgacaaacttataaaaacattaactataaaaagggaatt
+    MB13B1      ttactttgttgtatagctctttatttttatattcgtcttagtgacaaacttataaaaacattaactataaaaagggaatt
+    MJ8.1       ttactttgttgtatagcactttatttttatattcgccttagagataaacttatacaaacattaactataaaaagagaatt
+    EM18        ttactttgttgtatagctctttatttttatattcgtcttagtgataaacttataaaaacattaactataaaaagggaatt
+    ES213       ttactttgttgcatagcactttatttttatattcgtcttaatgataaacttataaaaacattaactataaaaagggaatt
+    MJ102       ttactttgttgtatagcactttatttttatattcgtcttaatgataaacttataaaaacattaactataaaaagggaatt
+    EM17        ttactttgttgtatagctctttatttttatattcgtcttagtgataaacttataaaaacattaactataaaaagggaatt
+    MB11B1      ttactttgttgcatagcactttatttttatattcgtcttaatgataaacttataaaaacattaactataaaaagggaatt
+
+    KB2B1       aatccgctctgaaaaagaaaaagtacaattagcgctcgttgccgagtatgctcatgacgcaatattcattttggacaaac
+    ES114       aatccgctctgaaaaagaaaaagcaaaattagcgctcgttgccgagtatgctcatgacgcaatattcattttggacaaac
+    EM30        aatccgctctgaaaaagaaaaagcaaaattagcgctcgttgccgagtatgctcatgacgcaatattcattttggacaaac
+    EM24        aatccgctctgaaaaagaaaaagcaaaattagcgctcgttgccgagtatgctcatgacgcaatattcattttggacaaac
+    MB14A1      aatccgctctgaaaaagaaaaagcaaaattagcgctcgttgccgagtatgctcatgacgcaatattcattttggacaaac
+    MB13B1      aatccgctctgaaaaagaaaaagcaaaattagcgctcgttgccgagtatgctcatgacgcaatattcattttggacaaac
+    MJ8.1       aatccgctctgaaaaagaaaaaacaaaattagcactcgttgccgagtatgctcacgacgcaatatttattttggacaaac
+    EM18        aatccgctctgaaaaagaaaaagcaaaattagcgctcgttgccgagtatgctcatgacgcaatattcattttggacaaac
+    ES213       aatccgctctgaaaaagaaaaagtacaattagcgctcgttgccgagtatgctcatgacgcaatattcattttggacaaac
+    MJ102       aatccgctctgaaaaagaaaaagcaaaattagcgctcgttgccgagtatgctcatgacgcaatattcattttggacaaac
+    EM17        aatccgctctgaaaaagaaaaagcaaaattagcgctcgttgccgagtatgctcatgacgcaatattcattttggacaaac
+    MB11B1      aatccgctctgaaaaagaaaaagtacaattagcgctcgttgccgagtatgctcatgacgcaatattcattttggacaaac
+
+    KB2B1       aaggcagattaacttggataaaccaaagttattctgctttatccggtaatacattagaggatattgaaggtaaagatctt
+    ES114       aaggcaggttaacttggataaaccaaagttattctgctttatccggtaatacattagaggatattgaaggtaaagatctt
+    EM30        aaggcaggttaacttggataaaccaaagttattctgctttatccggtaatacattagaggatattgaaggtaaagatctt
+    EM24        aaggcaggttaacttggataaaccaaagttattctgctttatccggtaatacattagaggatattgaaggtaaagatctt
+    MB14A1      aaggcaggttaacttggataaaccaaagttattctgctttatccggtaatacattagaggatattaaaggtaaagatctt
+    MB13B1      aaggcaggttaacttggataaaccaaagttattctgctttatccggtaatacattagaggatattaaaggtaaagatctt
+    MJ8.1       aaagcaagttaacttggataaaccaaagttattctgtcttatctggcaatacattagaagatattaaaggtaaagatctt
+    EM18        aaggcaggttaacttggataaaccaaagttattctgctttatccggtaatacattagaggatattgaaggtaaagatctt
+    ES213       aaggcagattaacttggataaaccaaagttattctgctttatccggtaatacattagaggatattgaaggtaaagatctt
+    MJ102       aaggcaggttaacttggataaaccaaagttattctgctttatccggtaatacattagaggatattgaaggtaaagatctt
+    EM17        aaggcaggttaacttggataaaccaaagttattctgctttatccggtaatacattagaggatattgaaggtaaagatctt
+    MB11B1      aaggcagattaacttggataaaccaaagttattctgctttatccggtaatacattagaggatattgaaggtaaagatctt
+
+    KB2B1       ccatcaattctgcagttagataaaataaaacatgccaatattattatcttgcttcaatccttagaaacaggaacatccat
+    ES114       ccatcaattctgcagttagataaaataaaacatgccaatattattatcttgcttcaatccttagaaacaggaacatccat
+    EM30        ccatccattctgcagttagataaaataaaacatgccaatattattatcttgcttcaatccttagaaacaggaacatccat
+    EM24        ccatccattctgcagttagataaaataaaacatgccaatattattatcttgcttcaatccttagaaacaggaacatccat
+    MB14A1      ccatccattctgcagttagataaaataaaacatgccaatattattatcttgcttcaatccttagaaacaggaacatccat
+    MB13B1      ccatccattctgcagttagataaaataaaacatgccaatattattatcttgcttcaatccttagaaacaggaacatccat
+    MJ8.1       ccttccgttctgcagttagataaaatacaacatgcaaatatttttactttgcttcaatccttaaaaacaggaacatccgt
+    EM18        ccatccattctgcagttagataagataaaacatgccaatattattatcttgcttcaatccttagaaacaggaacatccat
+    ES213       ccatcaattctgcagttagataaaataaaacatgccaatattattatcttgcttcaatccttagaaacaggaacatccat
+    MJ102       ccatcaattctgcagttagataaaataaaacatgccaatattattatcttgcttcaatccttagaaacaggaacatccat
+    EM17        ccatccattctgcagttagataagataaaacatgccaatattattatcttgcttcaatccttagaaacaggaacatccat
+    MB11B1      ccatcaattctgcagttagataaaataaaacatgccaatattattatcttgcttcaatccttagaaacaggaacatccat
+
+    KB2B1       atcttttgaattaacaaatcatcataaagatggaactttattctggatagatgtgtccataactccaattttggaaccta
+    ES114       atcttttgaattaacaaatcatcataaagatggaactttattctggatagatgtatccataactccaattttggaaccta
+    EM30        atcttttgaattaacaaatcatcataaagatggaactttattctggatagatgtatccataactccaattttggaaccta
+    EM24        atcttttgaattaacaaatcatcataaagatggaactttattctggatagatgtatccataactccaattttggaaccta
+    MB14A1      atcttttgaattaacaaatcatcataaagatggaactttattctggatagatgtatccataactccaattttggaaccta
+    MB13B1      atcttttgaattaacaaatcatcataaagatggaactttattctggatagatgtatccataactccaattttggaaccta
+    MJ8.1       ttcttttgaattaacaaataatcataaagatggaaccttgtattggatagatgtatctgtaactccaatatttaaaccta
+    EM18        atcttttgaattaacaaatcatcataaagatggaactttattctggatagatgtatccataactccaattttggaacctt
+    ES213       atcttttgaattaacaaatcatcataaagatggaactttattctggatagatgtgtccataactccaattttggaaccta
+    MJ102       atcttttgaattaacaaatcatcataaagatggaactttattctggatagatgtatccataactccaattttggaaccta
+    EM17        atcttttgaattaacaaatcatcataaagatggaactttattctggatagatgtatccataactccaattttggaacctt
+    MB11B1      atcttttgaattaacaaatcatcataaagatggaactttattctggatagatgtgtccataactccaattttggaaccta
+
+    KB2B1       atggcaatatcatgcactacattgccgtagaaagagacatcactaaaa-aaaagaactagaagataagttaataaaagca
+    ES114       atggcaatatcatgcactacattgccgtagaaagagacatcactaaaaaaaaagaactagaagataagttaataaaagca
+    EM30        atggcaatatcatgcactacattgccgtagaaagagacatcactaaaaaaaaagaactagaagataagttagtaaaagca
+    EM24        atggcaatatcatgcactacattgccgtagaaagagacatcactaaaaaaaaagaactagaagataagttagtaaaagca
+    MB14A1      atggcaatatcatgcactacattgccgtagaaagagacatcactaaaaaaaaagaactagaagataagttaataaaagca
+    MB13B1      atggcaatatcatgcactacattgccgtagaaagagacatcactaaaaaaaaagaactagaagataagttaataaaagca
+    MJ8.1       acggcaatatcatgcactatgttgttgttgaaagagacatcactaagaaaaaagaactagaagataaactgataaaagcg
+    EM18        atggcaatatcatgcactacattgccgtagaaagagacatcactaaaaaaaaagaactagaagataagttaataaaagca
+    ES213       atggcaatatcatgcactacattgccgtagaaagagacatcactaaaa-aaaagaactagaagataagttaataaaagca
+    MJ102       atggcaatatcatgcactacattgccgtagaaagagacatcactaaaaaaaaagaactagaagataagttaataaaagca
+    EM17        atggcaatatcatgcactacattgccgtagaaagagacatcactaaaaaaaaagaactagaagataagttaataaaagca
+    MB11B1      atggcaatatcatgcactacattgccgtagaaagagacatcactaaaa-aaaagaactagaagataagttaataaaagca
+
+    KB2B1       gcaaataaagccgatgtttcaaatagagctaaatctacgtttttagcaactatgagccatgagttaaggacacctcttaa
+    ES114       gcaaataaagccgatgtttcaaatagagctaaatctacgtttttagcaactatgagccatgagttaaggacacctcttaa
+    EM30        gcaaataaagccgatgtttcaaatagagctaaatctatgtttttagcaactatgagccatgagttaaggacacctcttaa
+    EM24        gcaaataaagccgatgtttcaaatagagctaaatctatgtttttagcaactatgagccatgagttaaggacacctcttaa
+    MB14A1      gcaaataaagccgatgtttcaaatagagctaaatctacgtttttagcaactatgagccatgagttaaggacacctcttaa
+    MB13B1      gcaaataaagccgatgtttcaaatagagctaaatctacgtttttagcaactatgagccatgagttaaggacacctcttaa
+    MJ8.1       gcagataaagctgatgtttcaaacaaagctaaatctacgtttttagctactatgagccatgaattaaggacacctcttaa
+    EM18        gcaaataaagccgatgtttcaaatagagctaaatctacgtttttagcaactatgagccatgagttaagaacacctcttaa
+    ES213       gcaaataaagccgatgtttcaaatagagctaaatctacgtttttagcaactatgagccatgagttaaggacacctcttaa
+    MJ102       gcaaataaagccgatgtttcaaatagagctaaatctacgtttttagcaactatgagccatgagttaaggacacctcttaa
+    EM17        gcaaataaagccgatgtttcaaatagagctaaatctacgtttttagcaactatgagccatgagttaagaacacctcttaa
+    MB11B1      gcaaataaagccgatgtttcaaatagagctaaatctacgtttttagcaactatgagccatgagttaaggacacctcttaa
+
+    KB2B1       tggtatattgggaatggctcaaattattgaaagtaatataaaagataaagagcagcataaacaaataaaaatgctactgg
+    ES114       tggtatattgggaatggctcaaattattgaaagtaatataaaagataaagagcagcataaacaaataaaaatgctactgg
+    EM30        tggtatattgggaatggctcaaattattgaaagtaatataaaagataaagagcagcataaacaaataaaaatgctactgg
+    EM24        tggtatattgggaatggctcaaattattgaaagtaatataaaagataaagagcagcataaacaaataaaaatgctactgg
+    MB14A1      tggtatattgggaatggctcaaattattgaaagtaatataaaagataaagagcagcataaacaaataaaaatgctactgg
+    MB13B1      tggtatattgggaatggctcaaattattgaaagtaatataaaagataaagagcagcataaacaaataaaaatgctactgg
+    MJ8.1       cggcatattaggtatggctcaaattattgaaagcaatataaaagatgaagaacagcataaacaaataaaagtactactag
+    EM18        tggtatattgggaatggctcaaattattgaaagtaatataaaagataaagagcagcataaacaaataaaaatgctactgg
+    ES213       tggtatattgggaatggctcaaattattgaaagtaatataaaagataaagagcagcataaacaaataaaaatgctactgg
+    MJ102       tggtatattgggaatggctcaaattattgaaagtaatataaaagataaagagcagcataaacaaataaaaatgctactgg
+    EM17        tggtatattgggaatggctcaaattattgaaagtaatataaaagataaagagcagcataaacaaataaaaatgctactgg
+    MB11B1      tggtatattgggaatggctcaaattattgaaagtaatataaaagataaagagcagcataaacaaataaaaatgctactgg
+
+    KB2B1       aatcaggcgaccatttgctatttttgctcaatgagatattagacttttcaaaaatagaacaaaataaactagaacttaat
+    ES114       aatcaggcgaccatttgctatttttgctcaatgaaatattagacttttcaaaaatagaacaaaataaactagaacttaat
+    EM30        aatcaggcgaccatttgctatttttgctcaatgagatattagacttttcaaaaatagaacaaaataaactagaacttaat
+    EM24        aatcaggcgaccatttgctatttttgctcaatgagatattagacttttcaaaaatagaacaaaataaactagaacttaat
+    MB14A1      aatcaggcgaccatttgctatttttgctcaatgagatattagacttttcaaaaatagaacaaaataaactagaacttaat
+    MB13B1      aatcaggcgaccatttgctatttttgctcaatgagatattagacttttcaaaaatagaacaaaataaactagaacttaat
+    MJ8.1       aatcaggtgatcatttactctctttgctcaatgatatattggacttttcaaaaatagaacaaaataaactagaacttaat
+    EM18        aatcaggcgaccatttgctatttttgctcaatgagatattagacttttcaaaaatagaacaaaataaactagaacttaat
+    ES213       aatcaggcgaccatttgctatttttgctcaatgagatattagacttttcaaaaatagaacaaaataaactagaacttaat
+    MJ102       aatcaggcgaccatttgctatttttgctcaatgaaatattagacttttcaaaaatagaacaaaataaactagaacttaat
+    EM17        aatcaggcgaccatttgctatttttgctcaatgagatattagacttttcaaaaatagaacaaaataaactagaacttaat
+    MB11B1      aatcaggcgaccatttgctatttttgctcaatgagatattagacttttcaaaaatagaacaaaataaactagaacttaat
+
+    KB2B1       catgcttctttttactttgttgatataattgaacctatcactaatacttatctatcagtttgtgaaaataaagggcttca
+    ES114       catgcttctttttactttgttgatataattgaacctatcactaatacttatctatcagtttgtgaaaataaagggcttaa
+    EM30        catgcttctttttactttgttgatataattgatcctatcactaatacttatctatcaatttgtgaaaataaagggcttca
+    EM24        catgcttctttttactttgttgatataattgatcctatcactaatacttatctatcaatttgtgaaaataaagggcttca
+    MB14A1      catgcttctttttactttgttgatataattgaacccatcactaatacttatctatcagtttgtgaaaataaagggcttca
+    MB13B1      catgcttctttttactttgttgatataattgaacctatcactaatacttatctatcagtttgtgaaaataaagggcttca
+    MJ8.1       catgcttctttttactttaatgatgttatcgatcctatcgctaatacctatctatcaatttgtgaagataaagggcttca
+    EM18        catgcttctttttactttgttgatataattgaacctatcaccaatacttatctatcagtttgtgaaaataaagggcttca
+    ES213       catgcttctttttactttgttgatataattgaacctatcactaatacttatctatcagtttgtgaaaataaagggcttca
+    MJ102       catgcttctttttactttgttgatataattgaacctatcactaatacttatctatcagtttgtgaaaataaagggcttaa
+    EM17        catgcttctttttactttgttgatataattgaacctatcaccaatacttatctatcagtttgtgaaaataaagggcttca
+    MB11B1      catgcttctttttactttgttgatataattgaacctatcactaatacttatctatcagtttgtgaaaataaagggcttca
+
+    KB2B1       atttattattgataataagattaacaatgaaacagtttttattggcgataaacctcgtatacgacaaattatttttaatt
+    ES114       atttattattgataataagattaacaatgaaatagttttcattggcgataaacctcgtatacgacaaattatttttaatt
+    EM30        attcattattgacaataagattaacaatgaaacagttttcattggcgataaacctcgtatacgacaaattatttttaatt
+    EM24        attcattattgacaataagattaacaatgaaacagttttcattggcgataaacctcgtatacgacaaattatttttaatt
+    MB14A1      atttattattgataataagattaacaatgaaacagttttcattggcgataaacctcgtatacgacaaattatttttaatt
+    MB13B1      atttattattgataataagattaacaatgaaacagttttcattggcgataaacctcgtatacgacaaattatttttaatt
+    MJ8.1       attcattattaataataacattaacgagaaaacaattttccttggtgacaagcctcgtatacgacaaattatttttaatt
+    EM18        atttattattgataataagattaacaatgaaacagttttcattggcgataaacctcgtatacgacaaattatttttaatt
+    ES213       atttattattgataataagattaacaatgaaacagtttttattggcgataaacctcgtatacgacaaattatttttaatt
+    MJ102       atttattattgataataagattaacaatgaaatagttttcattggcgataaacctcgtatacgacaaattatttttaatt
+    EM17        atttattattgataataagattaacaatgaaacagttttcattggcgataaacctcgtatacgacaaattatttttaatt
+    MB11B1      atttattattgataataagattaacaatgaaacagtttttattggcgataaacctcgtatacgacaaattatttttaatt
+
+    KB2B1       taatcagcaacgcagtgaaattcactcatgagggaagcattactcttaattttagccatactctaacaggtaaaggtgaa
+    ES114       taatcagcaacgcagtgaaattcactcatgagggaagcattactcttaattttagccatactctaacaggtaaaggtaaa
+    EM30        taatcagcaacgcagtgaaattcactcatgagggaagcattactcttaattttagccatactctaacaggtaaaggtgaa
+    EM24        taatcagcaacgcagtgaaattcactcatgagggaagcattactcttaattttagccatactctaacaggtaaaggtgaa
+    MB14A1      taatcagcaacgcagtgaaattcactcatgagggaagcattactcttaattttagccatactctaacaggtaaaggtgaa
+    MB13B1      taatcagcaacgcagtgaaattcactcatgagggaagcattactcttaattttagccatactctaacaggtaaaggtgaa
+    MJ8.1       taatcagcaacgcagttaaatttactcataagggaagcattactcttaattttagccatactctaacacctaaaggggaa
+    EM18        taatcagcaacgcagtgaaattcactcatgagggaagcattactcttaattttagccatactctaacaggtaaaggtgaa
+    ES213       taatcagcaacgcagtgaaattcactcatgagggaagcattactcttaattttagccatactctaacaggtaaaggtgaa
+    MJ102       taatcagcaacgcagtgaaattcactcatgagggaagcattactcttaattttagccatactctaacaggtaaaggtaaa
+    EM17        taatcagcaacgcagtgaaattcactcatgagggaagcattactcttaattttagccatactctaacaggtaaaggtgaa
+    MB11B1      taatcagcaacgcagtgaaattcactcatgagggaagcattactcttaattttagccatactctaacaggtaaaggtgaa
+
+    KB2B1       caagctgttcaaataaagattaaagatacaggtgtaggcatacgagaaaaccgactaaaacacatatttgaaccctatat
+    ES114       caagctgttcaaataaaaattaaagatacaggtgtaggcatacgagaaaaccgactaaaacacatatttgaaccctatat
+    EM30        caagctgttcaaataaagattaaagatacaggtgtaggcatacgaaaaagccgactaaaacacatatttgaaccttatat
+    EM24        caagctgttcaaataaagattaaagatacaggtgtaggcatacgaaaaagccgactaaaacacatatttgaaccttatat
+    MB14A1      caagctgttcaaataaagattaaagatacaggtgtaggcatacgagaaaaccgactaaaacacatatttgaaccctatat
+    MB13B1      caagctgttcaaataaagattaaagatacaggtgtaggcatacgagaaaaccgactaaaatacatatttgaaccctatat
+    MJ8.1       caagctgtccaaataaaggttcaggatacaggtataggcatacgcaaaaaacgtctaaaacacatatttgagccatttat
+    EM18        caagctgttcaaataaagattaaagatacaggtgtaggcatacgagaaaaccgactaaaacacatatttgaaccctatat
+    ES213       caagctgttcaaataaagattaaagatacaggtgtaggcatacgagaaaaccgactaaaacacatatttgaaccctatat
+    MJ102       caagctgttcaaataaaaattaaagatacaggtgtaggcatacgagaaaaccgactaaaacacatatttgaaccctatat
+    EM17        caagctgttcaaataaagattaaagatacaggtgtaggcatacgagaaaaccgactaaaacacatatttgaaccctatat
+    MB11B1      caagctgttcaaataaagattaaagatacaggtgtaggcatacgagaaaaccgactaaaacacatatttgaaccctatat
+
+    KB2B1       tcaagctgaagctagcaccacgcgccagtatggtggtacagggttaggtcttgccattgtaaaacaattaaccgatataa
+    ES114       tcaagctgaagctagcaccacgcgccagtatggtggtacagggttaggtcttgccattgtaaaacaattaaccgatataa
+    EM30        tcaagctgaagctagcaccacgcgccagtatggtggtacagggttaggtcttgccattgtaaaacaattaaccgatataa
+    EM24        tcaagctgaagctagcaccacgcgccagtatggtggtacagggttaggtcttgccattgtaaaacaattaaccgatataa
+    MB14A1      tcaagctgaagctagcaccacgcgccagtatggtggtacagggttaggtcttgccattgtaaaacaattaaccgatataa
+    MB13B1      tcaagctgaagctagcaccacgcgccagtatggtggtacagggttaggtcttgccattgtaaaacaattaaccgatataa
+    MJ8.1       tcaagctgaaactagcaccactcgccagtatggtggaacaggattaggtcttgccattgtgaaacaattaaccgatacaa
+    EM18        tcaagctgaagctagcaccacgcgccagtatggtggtacagggttaggtcttgccattgtaaaacaattaaccgatataa
+    ES213       tcaagctgaagctagcaccacgcgccagtatggtggtacagggttaggtcttgccattgtaaaacaattaaccgatataa
+    MJ102       tcaagctgaagctagcaccacgcgccagtatggtggtacagggttaggtcttgccattgtaaaacaattaaccgatataa
+    EM17        tcaagctgaagctagcaccacgcgccagtatggtggtacagggttaggtcttgccattgtaaaacaattaaccgatataa
+    MB11B1      tcaagctgaagctagcaccacgcgccagtatggtggtacagggttaggtcttgccattgtaaaacaattaaccgatataa
+
+    KB2B1       tgagaggatatatttcagtcagcagctctgaaggaaaaggatcttgttttactttagttctgcctcttgatataactaaa
+    ES114       tgagaggatatatttcagtcagcagctctgaaggaaaagggtcttgttttactttagttctgcctcttgatataaccaaa
+    EM30        tgagaggatatatttcagtcagcagctctgaaggaaaagggtcttgttttactttagttctgcctcttgatataaccaaa
+    EM24        tgagaggatatatttcagtcagcagctctgaaggaaaagggtcttgttttactttagttctgcctcttgatataaccaaa
+    MB14A1      tgagaggatatatttcagtcagcagctctgaaggaaaagggtcttgttttactttagttctgcctcttgatataaccaaa
+    MB13B1      tgagaggatatatttcagtcagcagctctgaaggaaaagggtcttgttttactttagttctgcctcttgatataaccaaa
+    MJ8.1       tgaaaggatatatttcagttaatagctctgaaggtaaaggtacttgttttaccttagttctgcctcttgaaatcaccaaa
+    EM18        tgagaggatatatttcagtcagcagctctgaaggaaaagggtcttgttttactttagttctgcctcttgatataaccaaa
+    ES213       tgagaggatatatttcagtcagcagctctgaaggaaaaggatcttgttttactttagttctgcctcttgatataactaaa
+    MJ102       tgagaggatatatttcagtcagcagctctgaaggaaaagggtcttgttttactttagttctgcctcttgatataaccaaa
+    EM17        tgagaggatatatttcagtcagcagctctgaaggaaaagggtcttgttttactttagttctgcctcttgatataaccaaa
+    MB11B1      tgagaggatatatttcagtcagcagctctgaaggaaaaggatcttgttttactttagttctgcctcttgatataactaaa
+
+    KB2B1       tcaaaacaattaaaagataacgatgccctactaccatcagaacaaagtaaatcaacaaatcctattccaatggcaaattt
+    ES114       tcaaaacaattaaaagataacgatgccctactaccatcaggacaaagtaaatcaacaaatcctattccaatggcaaattt
+    EM30        tcaaaacaattaaaagataacgatgccctactaccatcagaacaaagtaaatcaacaaatcctattccaatggcaaattt
+    EM24        tcaaaacaattaaaagataacgatgccctactaccatcagaacaaagtaaatcaacaaatcctattccaatggcaaattt
+    MB14A1      tcaaaacaattaaaagataacgatgccctactaccatcagaacaaagtaaatcaacaaatcctattccaatggcaaattt
+    MB13B1      tcaaaacaattaaaagataacgatgccctactaccatcagaacaaagtaaatcaacaaatcctattccaatggcaaattt
+    MJ8.1       tcaaaacaattaatagatagcgatgccct---accatcagataaaaataaaccaacagaacctacttcaatagcaaattt
+    EM18        tcaaaacaattaaaagataacgatgccctactaccatcagaacaaagtaaatcaacaaatcctattccaatggcaaattt
+    ES213       tcaaaacaattaaaagataacgatgccctactaccatcagaacaaagtaaatcaacaaatcctattccaatggcaaattt
+    MJ102       tcaaaacaattaaaagataacgatgccctactaccatcagaacaaagtaaatcaacaaatcctattccaatggcaaattt
+    EM17        tcaaaacaattaaaagataacgatgccctactaccatcagaacaaagtaaatcaacaaatcctattccaatggcaaattt
+    MB11B1      tcaaaacaattaaaagataacgatgccctactaccatcagaacaaagtaaatcaacaaatcctattccaatggcaaattt
+
+    KB2B1       gtccatattaatcgctgaagataataaaattaatgcattagtcgctcagatgttttgtcaacgactaggacataaggcga
+    ES114       gtccatattaatcgctgaagataataaaattaatgcattggtcgctcagatgttttgtcaacgactaggacataaggcga
+    EM30        gtccatattaatcgctgaagataataaaattaatgcattagtcgctcagatgttttgtcaacgactaggacataaggcga
+    EM24        gtccatattaatcgctgaagataataaaattaatgcattagtcgctcagatgttttgtcaacgactaggacataaggcga
+    MB14A1      gtccatattaatcgctgaagataataaaattaatgcattagtcgctcagatgttttgtcaacgactaggacataaggcga
+    MB13B1      gtccatattaatcgctgaagataataaaattaatgcattagtcgctcagatgttttgtcaacgactaggacataaggcga
+    MJ8.1       atccatattaatcgctgaggataataaaattaatgcattagtggctcaaatgttttgtcaacgactaggacataaagcaa
+    EM18        gtccatattaatcgctgaagataataaaattaatgcattagtcgctcagatgttttgtcaacgactaggacataaggcga
+    ES213       gtccatattaatcgctgaagataataaaattaatgcattagtcgctcagatgttttgtcaacgactaggacataaggcga
+    MJ102       gtccatattaatcgctgaagataataaaattaatgcattggtcgctcagatgttttgtcaacgactaggacataaggcga
+    EM17        gtccatattaatcgctgaagataataaaattaatgcattagtcgctcagatgttttgtcaacgactaggacataaggcga
+    MB11B1      gtccatattaatcgctgaagataataaaattaatgcattagtcgctcagatgttttgtcaacgactaggacataaggcga
+
+    KB2B1       tcattgcagaaaatggaaaagttgccatcgacaaattaaaagaaacgcatttcgatttaattatcatggataaccatatg
+    ES114       tcattgcagaaaatggaaaagttgccatcgacaaattaaaagaaacgcatttcgatttaattatcatggataaccatatg
+    EM30        tcattgcagaaaatggaaaagttgccatcgacaaattaaaagaaacgcatttcgatttaattatcatggataaccatatg
+    EM24        tcattgcagaaaatggaaaagttgccatcgacaaattaaaagaaacgcatttcgatttaattatcatggataaccatatg
+    MB14A1      tcattgcagaaaatggaaaagttgccatcgacaaattaaaagaaacgcatttcgatttaattatcatggataaccatatg
+    MB13B1      tcattgcagaaaatggaaaagttgccatcgacaaattaaaagaaacgcatttcgatttaattatcatggataaccatatg
+    MJ8.1       tcattgcagaaaatggaaaagttgccatcgaaaaattaaaagaaacgcatttcgatttaattattatggataaccatatg
+    EM18        tcattgcagaaaatggaaaagttgccatcgacaaattaaaagaaacgcatttcgatttaattatcatggataaccatatg
+    ES213       tcattgcagaaaatggaaaagttgccatcgacaaattaaaagaaacgcatttcgatttaattatcatggataaccatatg
+    MJ102       tcattgcagaaaatggaaaagttgccatcgacaaattaaaagaaacgcatttcgatttaattatcatggataaccatatg
+    EM17        tcattgcagaaaatggaaaagttgccatcgacaaattaaaagaaacgcatttcgatttaattatcatggataaccatatg
+    MB11B1      tcattgcagaaaatggaaaagttgccatcgacaaattaaaagaaacgcatttcgatttaattatcatggataaccatatg
+
+    KB2B1       cctgtaatggacggtattttagccacaaaaataatcagagagaaattaaaaatctcaacggttatttttgcttacacagc
+    ES114       cctgtaatggacggtattttagccacaaaaataatcagagaaaaattaaaaatctcaacggttatttttgcttacacagc
+    EM30        ccagtaatggacggtattttagccacaaaaataatcagagaaaaattaaaaatctcaacggttatttttgcttacacagc
+    EM24        ccagtaatggacggtattttagccacaaaaataatcagagaaaaattaaaaatctcaacggttatttttgcttacacagc
+    MB14A1      cctgtaatggacggtattttagccacaaaaataatcagagagaaattaaaaatctcaacggttatttttgcttacacagc
+    MB13B1      cctgtaatggacggtattttagccacaaaaataatcagagagaaattaaaaatctcaacggttatttttgcttacacagc
+    MJ8.1       cctgtaatggacggtatcttagctacaaaagcaattagagaagaattaaaactctcaacggttatttttgcttgcacagc
+    EM18        cctgtaatggacggtattttagccacaaaaataatcagagagaaattaaaaatctcaacgattatttttgcttacacagc
+    ES213       cctgtaatggacggtattttagccacaaaaataatcagagagaaattaaaaatctcaacggttatttttgcttacacagc
+    MJ102       cctgtaatggacggtattttagccacaaaaataatcagagaaaaattaaaaatctcaacggttatttttgcttacacagc
+    EM17        cctgtaatggacggtattttagccacaaaaataatcagagagaaattaaaaatctcaacgattatttttgcttacacagc
+    MB11B1      cctgtaatggacggtattttagccacaaaaataatcagagagaaattaaaaatctcaacggttatttttgcttacacagc
+
+    KB2B1       aaatgtctttcaaaaagcacatgataactttttaaaagcaggagcaaactatgtcttaactaaaccattacaagaaaatg
+    ES114       aaatgcctttcaaaaagcacatgataactttttaaaagcaggagcaaactatgtcttaactaaaccattacaagaaaatg
+    EM30        aaatgtctttcaaaaagcacatgataactttttaaaagcaggagcaaactatgtcttaactaaaccattacaagaaaatg
+    EM24        aaatgtctttcaaaaagcacataataactttttaaaagcaggagcaaactatgtcttaactaaaccattacaagaaaatg
+    MB14A1      aaatgtctttcaaaaagcacatgataactttttaaaagcaggagcaaactatgtcttaactaaaccattacaagaaaata
+    MB13B1      aaatgtctttcaaaaagcacatgataactttttaaaagcaggagcaaactatgtcttaactaaaccattacaagaaaatg
+    MJ8.1       agacgtctttcaagaagcacatgataactttttaaaggctggtgcgaactatgtcttaactaaaccattacaagaaaatg
+    EM18        aaatgtctttcaaaaagcacatgataactttttaaaagcaggagcaaactatgtcttaactaaaccattacaagaaaatg
+    ES213       aaatgtctttcaaaaagcacatgataactttttaaaagcaggagcaaactatgtcttaactaaaccattacaagaaaatg
+    MJ102       aaatgcctttcaaaaagcacatgataactttttaaaagcaggagcaaactatgtcttaactaaaccattacaagaaaatg
+    EM17        aaatgtctttcaaaaagcacatgataactttttaaaagcaggagcaaactatgtcttaactaaaccattacaagaaaatg
+    MB11B1      aaatgtctttcaaaaagcacatgataactttttaaaagcaggagcaaactatgtcttaactaaaccattacaagaaaatg
+
+    KB2B1       atttcattggcgcaatcaaacaatatcaagatgcaatcatccaacaaaaaagaacgtcatactccgctcaaaaaaaaaat
+    ES114       atttcattggcgcaatcaaacaatatcaagatgcaatcatccaacaaaaaagaacgtcgtaccccactcaagaaaaaaat
+    EM30        atttcattggcgcaatcaaacaacatcaagatgtaatcatccaacaaaaaagaacgtcatactccgctcaaaaaaaaaat
+    EM24        atttcattggcgcaatcaaacaacatcaagatgtaatcatccaacaaaaaagaacgtcatactccgctcaaaaaaaaaat
+    MB14A1      atttcattggcgcaatcaaacaatatcaagatgcaatcatccaacaaaaaagaagctc------------aaaaaaaaat
+    MB13B1      atttcattggcgcaatcaaacaatatcaagatgcaatcatccaacaaaaaagaacgtcatactccgctcaaaaaaaaaat
+    MJ8.1       gtttcattgatgcaattaaacaacatcaagatgcgataatccaacaaaaaagaacgtcatgtcctactcaagaaaaaaat
+    EM18        atttcattggcgcaatcaaacaatatcaagatgcaatcatccaacaaaaaagaacgtcatactccgctcaaaaaaaaaat
+    ES213       atttcattggcgcaatcaaacaatatcaagatgcaatcatccaacaaaaaagaacgtcatactccgctcaaaaaaaaaat
+    MJ102       atttcattggcgcaatcaaacaatatcaagatgcaatcatccaacaaaaaagaacgtcgtaccccactcaagaaaaaaat
+    EM17        atttcattggcgcaatcaaacaatatcaagatgcaatcatccaacaaaaaagaacgtcatactccgctcaaaaaaaaaat
+    MB11B1      atttcattggcgcaatcaaacaatatcaagatgcaatcatccaacaaaaaagaacgtcatactccgctcaaaaaaaaaat
+
+    KB2B1       cgtaatatcatagaattaagacgtccttttaaatatccatgttcagataacacactaattaaagcagaaataaaattgac
+    ES114       agcaatatcatagaattgaaacgcccttctaaatataaactttcagatgatgcactaactgaagcggaaataaaactgac
+    EM30        ggtaatatcatagaattaagacgtccttttaaatatccatgttcagataacacactaattaaagctgaaataaaattggc
+    EM24        ggtaatatcatagaattaagacgtccttttaaatatccatgttcagataacacactaattaaagctgaaataaaattggc
+    MB14A1      cgtaatatcatagaattaagacgtccttttaaatatccatgttcagataacacactaattaaagccgaaataaaattgac
+    MB13B1      cgtaatatcatagaattaagacgtccttttaaatatccatattcagataacacactaattaaagccgaaataaaattgac
+    MJ8.1       agcaatatcatagaattgaaacgcccttctaaatatcaactttcagatgatgcactaactgaagcggaaataaaactgac
+    EM18        cgtaatatcatcgaattaagacgtccttttaaatatccatgttcagataacacactaattaaagccgaaataaaattgac
+    ES213       cgtaatatcatagaattaagacgtccttttaaatatccatgttcagataacacactaattaaagcagaaataaaattgac
+    MJ102       agcaatatcatagaattgaaacgcccttctaaatataaactttcagatgatgcactaactgaagcggaaataaaactgac
+    EM17        cgtaatatcatcgaattaagacgtccttttaaatatccatgttcagataacacactaattaaagccgaaataaaattgac
+    MB11B1      cgtaatatcatagaattaagacgtccttttaaatatccatgttcagataacacactaattaaagcagaaataaaattgac
+
+    KB2B1       gtcaatacaagatatttgtggtactgacagcaaatttatttgcgtattcttacaatcatttatcgatatatcagaagaaa
+    ES114       ttcaatacaagatatttgtggtactgatagcgaaattatttgtgtatttttacaatcatttatcgatacatcagaagaaa
+    EM30        gtcaatacaagatatttgtggtactgacagcaaatttatttgcgtattcttacaatcatttatcgatatatcagaagaaa
+    EM24        gtcaatacaagatatttgtggtactgacagcaaatttatttgcgcattcttacaatcatttatcgatatatcagaagaaa
+    MB14A1      gtcaatacaagatatttgtggtactgacagcaaatttatttgcgtattcttacaatcatttatcgatatatcagaagaaa
+    MB13B1      gtcaatacaagatatttgtggtactgacagcaaatttatttgcgtattcttacaatcatttatcgatatatcagaagaaa
+    MJ8.1       ttcaatacaagatatttgtggtactgatagcgaagttatttgtgtatttttacaatcatttatcgatacatcagaagaaa
+    EM18        gtcaatacaagatatttgtggtactgacagcaaatttatttgcgtattcttacaatcatttatcgatatatcagaagaaa
+    ES213       gtcaatacaagatatttgtggtactgacagcaaatttatttgcgtattcttacaatcatttatcgatatatcagaagaaa
+    MJ102       ttcaatacaagatatttgtggtactgatagcgaaattatttgtgtatttttacaatcatttatcgatacatcagaagaaa
+    EM17        gtcaatacaagatatttgtggtactgacagcaaatttatttgcgtattcttacaatcatttatcgatatatcagaagaaa
+    MB11B1      gtcaatacaagatatttgtggtactgacagcaaatttatttgcgtattcttacaatcatttatcgatatatcagaagaaa
+
+    KB2B1       acattacagaaatcatcactgcgtttgaaaaaaaagacacagagtcaattcgatttaatgctcactcgataaaaggtatg
+    ES114       acatcacagaaatcatcactgcgtttgaaaggaaggatataaaatcaattcgatttaatgctcactcgataaaaggtatg
+    EM30        acattacaaaaatcatcactgcgtttgaaaaaaaagacacagaatcaattcgatttaatgctcactcgataaaaggtatg
+    EM24        acattacaaaaatcatcactgcgtttgaaaaaaaagacacagaatcaattcgatttaatgctcactcgataaaaggtatg
+    MB14A1      acattacagaaatcatcactgcgtttgaaaaaaaagacacagagtcaattcgatttaatgctcactcgataaaaggtatg
+    MB13B1      acattacagaaatcatcactgcgtttgaaaaaaaagacacagagtcaattcgatttaatgctcactcgataaaaggtatg
+    MJ8.1       acatcacagaaatcatcactgcgtttgaaaggaaggatataaaatcaattcgatttaatgctcactcaataaaaggtatg
+    EM18        acattacagaaatcatcactgcgtttgaaaaaaaagacacagaatcaattcgatttaatgctcactcgataaaaggtatg
+    ES213       acattacagaaatcatcactgcgtttgaaaaaaaagacacagagtcaattcgatttaatgctcactcgataaaaggtatg
+    MJ102       acatcacagaaatcatcactgcgtttgaaaggaaggatataaaatcaattcgatttaatgctcactcgataaaaggtatg
+    EM17        acattacagaaatcatcactgcgtttgaaaaaaaagacacagaatcaattcgatttaatgctcactcgataaaaggtatg
+    MB11B1      acattacagaaatcatcactgcgtttgaaaaaaaagacacagagtcaattcgatttaatgctcactcgataaaaggtatg
+
+    KB2B1       gcttctaatttcagtgcctcacgcttaataaaaatagcaacctcaattgagctatgcgcgaagaaaaaaaacatgccgaa
+    ES114       gcttctaatttcagtgcctcacgcttaataaaaatagcaacctcaattgagctatgcgcgaagaaaaaaaacatgccgaa
+    EM30        gcttctaatttcagtgcgtcacgcttaataaaaatagcaacctcaattgagctatgcgcgaagaaaaaaaacatgccgaa
+    EM24        gcttctaatttcagtgcgtcacgcttaataaaaatagcaacctcaattgagctatgcgcgaagaaaaaaaacatgccgaa
+    MB14A1      gcttctaatttcagtgcctcacgcttaataaaaatagcaacctcaattgagctatgcgcgaagaaaaaaaacatgccgaa
+    MB13B1      gcttctaatttcagggcctcacgcttaataaaaatagcaacctcaattgagctatgcgcgaagaaaaaaaacatgccgaa
+    MJ8.1       gcttctaatttcaatgccccacgcttaatcaaaatagcaacgtcaattgagctacatgcaaaagaacaaaccatgcctat
+    EM18        gcttctaatttcagtgcctcacgcttaataaaaatagcaacctcaattgagctatgcgcgaagaaaaaaaacatgccgaa
+    ES213       gcttctaatttcagtgcctcacgcttaataaaaatagcaacctcaattgagctatgcgcgaagaaaaaaaacatgccgaa
+    MJ102       gcttctaatttcagtgcctcacgcttaataaaaatagcaacctcaattgagctatgcgcgaagaaaaaaaacatgccgaa
+    EM17        gcttctaatttcagtgcctcacgcttaataaaaatagcaacctcaattgagctatgcgcgaagaaaaaaaacatgccgaa
+    MB11B1      gcttctaatttcagtgcctcacgcttaataaaaatagcaacctcaattgagctatgcgcgaagaaaaaaaacatgccgaa
+
+    KB2B1       gctagaagatgttcagcaattgataaatttactagaaattaatattcaacaagcatctcgattattagagaagtatgaaa
+    ES114       gctagaagatgttcagcaattgataaatttactaaaaattaatattcaacaagcatctcgattattagagaagtatgaaa
+    EM30        gctagaagatgttcagcaattgataaatttactagaaattaatattcaacaagcatctcgattattagagaagtatgaaa
+    EM24        gctagaagatgttcagcaattgataaatttactagaaattaatattcaacaagcatctcgattattagagaagtatgaaa
+    MB14A1      gctagaagatgttcagcaattgataaatttactagaaattaatattcaacaagcatctcgattattagagaagtatgaaa
+    MB13B1      gctagaagatgttcagcaattgataaatttactagaaattaatattcaacaagcatctcgattattagagaagtatgaaa
+    MJ8.1       gctagaggatgttcagcaattaattaatttacttgaagttaatattcagcaggcatctcggttattagagaaatatgaaa
+    EM18        gctagaagatgttcagcaattgataaatttactagaaattaatattcaacaagcatctcgattattagagaagtatgaaa
+    ES213       gctagaagatgttcagcaattgataaatttactagaaattaatattcaacaagcatctcgattattagagaagtatgaaa
+    MJ102       gctagaagatgttcagcaattgataaatttactaaaaattaatattcaacaagcatctcgattattagagaagtatgaaa
+    EM17        gctagaagatgttcagcaattgataaatttactagaaattaatattcaacaagcatctcgattattagagaagtatgaaa
+    MB11B1      gctagaagatgttcagcaattgataaatttactagaaattaatattcaacaagcatctcgattattagagaagtatgaaa
+
+    KB2B1       cacaataa
+    ES114       cacaataa
+    EM30        cacaataa
+    EM24        cacaataa
+    MB14A1      cacaataa
+    MB13B1      tacaataa
+    MJ8.1       caca---a
+    EM18        cacaataa
+    ES213       cacaataa
+    MJ102       cacaataa
+    EM17        cacaataa
+    MB11B1      cacaataa
+  ;
+END;
+
+begin mrbayes;
+ set autoclose=yes;
+ prset brlenspr=unconstrained:exp(10.0);
+ prset shapepr=exp(1.0);
+ prset tratiopr=beta(1.0,1.0);
+ prset statefreqpr=dirichlet(1.0,1.0,1.0,1.0);
+ lset nst=2 rates=gamma ngammacat=4;
+ mcmcp ngen=1000000 samplefreq=100 printfreq=1000 nruns=3 nchains=3 savebrlens=yes;
+ outgroup MJ8.1;
+ mcmc;
+ sumt;
+end;
