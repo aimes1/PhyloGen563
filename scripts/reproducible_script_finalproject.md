@@ -3152,7 +3152,7 @@ e local chains...] (...0 remote chains...) -- 0:00:25
    or use 'set mode=interactive'
 ```
 
-1. Open the consensus tree files (con.tree) in [FigTree](http://tree.bio.ed.ac.uk/software/figtree/). Within FigTree, reroot the trees to the outgroup MJ8.1. Turn on the node label function to display posterior probabilities on the tree. 
+1. Open the consensus tree files (nex.con.tree) in [FigTree](http://tree.bio.ed.ac.uk/software/figtree/). Within FigTree, reroot the trees to the outgroup MJ8.1. Turn on the node label function to display posterior probabilities (display node label as post) on the tree. 
 
 
 
