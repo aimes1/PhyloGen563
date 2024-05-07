@@ -1,5 +1,7 @@
 # Notebook Log
 
+For full reproducible script as applies to the final manuscript, see the [reproducible_script_finalproject.md](scripts/reproducible_script_finalproject.md) file. 
+
 ### Bayesian Method Homework (2024-04-11)
 Script information contained in [scripts/bayesian_HW.md](scripts/bayesian_HW.md). 
 

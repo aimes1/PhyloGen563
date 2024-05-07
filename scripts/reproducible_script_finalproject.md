@@ -3,24 +3,27 @@
 ## Create multiple sequence alignment files 
 
 ### Prepare sequence files for alignment 
-1. Compiled sequence data are from selected *Vibrio fischeri* strains in the [Vfischeri_rscS_DNAfasta.fasta](/Users/aimes/Temp/PhyloGen563/data/large_files/Vfischeri_rscS_DNAfasta.fasta) file. This file contains the DNA sequence of the annotated *rscS* gene region from the listed *V. fischeri* strain. 
-   A. Note that the path commands below are shown as local paths on the device, and do not correlate to where the data is stored in the github. File names, however, are consistent and can be used to determine which file is being used. 
-2. Use the above file as the input to align sequences using both the MUSCLE program and the ClustalW program as specified below. 
+1. Compiled sequence data are from selected *Vibrio fischeri* strains in the [Vfischeri_rscS_DNAfasta.fasta](data/large_files/Vfischeri_rscS_DNAfasta.fasta) file. This file contains the DNA sequence of the annotated *rscS* gene region from the listed *V. fischeri* strain. 
 
-   A. Use strain MJ8.1 as the outgroup strain for *rscS* analysis. This is a *V. fischeri* that has a divergent RscS as it is a fish symbiont rather than squid symbiont like the other strains. MJ8.1 is unable to colonize squid ([Rotman et al. 2019](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6456852/))
+Note that the path commands below are shown as local paths on the device, and do not correlate to where the data is stored in the github. File names, however, are consistent and can be used to determine which file is being used. 
+
+2. Use the above file as the input to align sequences using both the MUSCLE program and the CLUSTALW program as specified below. 
+
+Note: Use strain MJ8.1 as the outgroup strain for *rscS* analysis. This is a *V. fischeri* that has a divergent RscS as it is a fish symbiont rather than squid symbiont like the other strains. MJ8.1 is unable to colonize squid ([Rotman et al. 2019](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6456852/))
+
+Note: Several software elements were run on Jackie Lemaire's MacBook Air as the machine due to incompatibility with the M2 chip on my machine that I was unable to resolve by the end of the project. Commands, choices, and physical input were made by myself. This was done for MUSCLE, CLUSTALW, and IQ-TREE.  
 
 ### Alignment method 1: MUSCLE
 1. Download [MUSLCE](https://github.com/rcedgar/muscle/releases/tag/5.1.0) as the file [muscle5.1.macos_intel64](https://github.com/rcedgar/muscle/releases/download/5.1.0/muscle5.1.macos_intel64). 
 
 2. Run MUSCLE on data using input: 
 ```shell
-aimes@Averys-MacBook-Pro ~ % muscle -align /Users/aimes/Documents/phylo_class/rscS/Vfischeri_rscS_DNAfasta.fasta -output ~/Documents/phylo_class/rscS/Vfischeri_rscS_DNA_muscle-aligned.fasta
+jacquelinelemaire@Jacquelines-Air ~ % muscle -align /Users/jacquelinelemaire/Documents/phylo_class/rscS/Vfischeri_rscS_DNAfasta.fasta -output ~/Documents/phylo_class/rscS/Vfischeri_rscS_DNA_muscle-aligned.fasta
 ```
 
 3. The output reads out: 
 ```shell
-Output on screen: 
-aimes@Averys-MacBook-Pro ~ % muscle -align /Users/aimes/Documents/phylo_class/rscS/Vfischeri_rscS_DNAfasta.fasta -output ~/Documents/phylo_class/rscS/Vfischeri_rscS_DNA_muscle-aligned.fasta
+jacquelinelemaire@Jacquelines-Air ~ % muscle -align /Users/jacquelinelemaire/Documents/phylo_class/rscS/Vfischeri_rscS_DNAfasta.fasta -output ~/Documents/phylo_class/rscS/Vfischeri_rscS_DNA_muscle-aligned.fasta
 
 muscle 5.1.osx64 []  8.6Gb RAM, 8 cores
 Built Feb 10 2022 07:52:24
@@ -35,7 +38,7 @@ Input: 12 seqs, avg length 2784, max 2802
 00:14 380Mb   100.0% Consistency (2/2)
 00:14 380Mb   100.0% UPGMA5
 00:17 487Mb   100.0% Refining
-aimes@Averys-MacBook-Pro ~ %
+jacquelinelemaire@Jacquelines-Air ~ %
 ```
 
 4. The MUSCLE multiple sequence alignment stored in the file [Vfischeri_rscS_DNA_muscle-aligned.fasta](results/rscS_multiple-seq-alignments/Vfischeri_rscS_DNA_muscle-aligned.fasta)
@@ -48,7 +51,7 @@ aimes@Averys-MacBook-Pro ~ %
 
 2. Run the input command to align sequences: 
 ```shell
-aimes@Averys-MacBook-Pro ~ % clustalw2 -ALIGN -INFILE=/Users/aimes/Documents/phylo_class/rscS/Vfischeri_rscS_DNAfasta.fasta -OUTFILE=/Users/aimes/Documents/phylo_class/rscS/Vfischeri_rscS_DNA-clustal-aligned.fasta -OUTPUT=FASTA
+jacquelinelemaire@Jacquelines-Air ~ % clustalw2 -ALIGN -INFILE=/Users/jacquelinelemaire/Documents/phylo_class/rscS/Vfischeri_rscS_DNAfasta.fasta -OUTFILE=/Users/jacquelinelemaire/Documents/phylo_class/rscS/Vfischeri_rscS_DNA-clustal-aligned.fasta -OUTPUT=FASTA
 ```
 
 1. The output reads as follows: 
@@ -138,7 +141,7 @@ Sequences (9:12) Aligned. Score:  89
 Sequences (10:11) Aligned. Score:  98
 Sequences (10:12) Aligned. Score:  89
 Sequences (11:12) Aligned. Score:  90
-Guide tree file created:   [/Users/aimes/Documents/phylo_class/rscS/Vfischeri_rscS_DNAfasta.dnd]
+Guide tree file created:   [/Users/jacquelinelemaire/Documents/phylo_class/rscS/Vfischeri_rscS_DNAfasta.dnd]
 
 There are 11 groups
 Start of Multiple Alignment
@@ -159,9 +162,7 @@ Alignment Score 1150741
 firstres = 1 lastres = 2808
 FASTA file created!
 
-Fasta-Alignment file created    [/Users/aimes/Documents/phylo_class/rscS/Vfischeri_rscS_DNA-clustal-aligned.fasta]
-
-aimes@Averys-MacBook-Pro ~ %
+Fasta-Alignment file created    [/Users/jacquelinelemaire/Documents/phylo_class/rscS/Vfischeri_rscS_DNA-clustal-aligned.fasta]
 ```
 1. Output file stored as [Vfischeri_rscS_DNA-clustal-aligned.fasta](results/rscS_multiple-seq-alignments/Vfischeri_rscS_DNA-clustal-aligned.fasta). 
 
@@ -432,13 +433,15 @@ title("Clustal pangorn tree")
 
 Summary steps: 
 1. Download IQ-TREE for Mac [here](http://www.iqtree.org/#download). Downloaded the zipped folder `iqtree-2.2.2.6-MacOSX`.
-   A. Use the m MF function to predict the best fit model. The predicted best fit model for this data was HKY+F+G4.  
+
+Note: Use the m MF function to predict the best fit model. The predicted best fit model for this data was HKY+F+G4.  
+
 2. Run a trial with 1000 bootstraps on the MUSCLE aligned file.  
 3. Run a trial with 5000 bootstraps on the MUSCLE aligned file. Keep the same model. 
 4. Repeat steps 1 and 2 on the CLUSTALW aligned data. 
 5. The input and output for each trial are detailed below: 
-   1. Note: this software was ran on Jackie Lemaire's MacBook Air as the machine. Commands and choices were specified and input by me, as I was unable to resolve installation issues with the software on my M2 chip MacbookPro. 
-   2. All output files stored within the [iq-tree-files](results/iq-tree-files) folder in the results directory. 
+
+All output files stored within the [iq-tree-files](results/iq-tree-files) folder in the results directory. 
 
 ### MUSCLE trial with 1000 bootstraps 
 ```shell
@@ -1517,7 +1520,7 @@ iqtree_w1k.rooted <- root(iqtree_w1k, outgroup = "MJ8.1", resolve.root = TRUE)
 iqtree_w5k.rooted <- root(iqtree_w5k, outgroup = "MJ8.1", resolve.root = TRUE)
 ```
 
-5. Plot the tree with node labels visible. 
+1. Plot the tree with node labels visible to show bootstrap supports (%). 
 ```r
 plot(iqtree_c1k.rooted, show.node.label=TRUE)
 title("IQ-Tree 1k Bootstrap ClustalW Tree")
@@ -1534,7 +1537,9 @@ title("IQ-Tree 5k Bootstrap MUSCLE Tree")
 
 ## Bayesian Inference of Phylogeny Using MrBayes
 
-1. Install MrBayes as shown [here](http://nbisweden.github.io/MrBayes/) through homebrew. Note that command line tools through xcode must be installed first, otherwise MrBayes will fail to install. In Mac, commands are:
+1. Install MrBayes as shown [here](http://nbisweden.github.io/MrBayes/) through homebrew. Note that command line tools through xcode must be installed first, otherwise MrBayes will fail to install. 
+
+Input commands are:
 
 ```shell
 xcode-select --install
@@ -1599,7 +1604,7 @@ end;
 
 Note: the cat command erased the data portion of the file during testing, so the text of the mbblock.txt was manually copy and pasted in the bottom of the relevant .nex file. 
 
-### Run MUSCLE-aligned nexus file 
+### Run MUSCLE-aligned Nexus File 
 
 Input command: 
 ```shell
@@ -2376,7 +2381,7 @@ e local chains...] (...0 remote chains...) -- 0:00:25
    or use 'set mode=interactive'
 ```
 
-### Run CLUSTALW-aligned nexus file 
+### Run CLUSTALW-aligned Nexus File 
 
 Input command: 
 ```shell
@@ -3151,8 +3156,9 @@ e local chains...] (...0 remote chains...) -- 0:00:25
    set mode to interactive with 'mb -i <filename>' (i is for interactive)
    or use 'set mode=interactive'
 ```
-
-1. Open the consensus tree files (nex.con.tree) in [FigTree](http://tree.bio.ed.ac.uk/software/figtree/). Within FigTree, reroot the trees to the outgroup MJ8.1. Turn on the node label function to display posterior probabilities (display node label as post) on the tree. 
+### Visualize MrBayes Consensus Trees
+1. Open the consensus tree files (nex.con.tree) in [FigTree](http://tree.bio.ed.ac.uk/software/figtree/). Note that FigTree requires Java to operate. 
+2. Within FigTree, reroot the trees to the outgroup MJ8.1. Turn on the node label function to display posterior probabilities (display node label as post) on the tree. 
 
 
 
